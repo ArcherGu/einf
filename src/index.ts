@@ -1,6 +1,6 @@
 import 'reflect-metadata'
 import type { BrowserWindow } from 'electron'
-import { ipcMain } from 'electron'
+import { app, ipcMain } from 'electron'
 import { checkPackageExists } from 'check-package-exists'
 import { DEFAULT_WIN_NAME, INJECTABLE, INJECT_NAME, INJECT_TYPE, IPC_INVOKE, IPC_ON, IPC_WIN_NAME, PARAMTYPES_METADATA } from './constants'
 import { createLogger } from './log'
@@ -10,25 +10,56 @@ type Construct<T = any> = new (...args: Array<any>) => T
 export type ControllerClass = Construct
 export type InjectableClass = Construct
 
+/**
+ * Window options
+ */
 export interface WindowOpts {
+  /**
+   * Window's name, you can use @Window(name) to inject window
+   */
   name: string
   win: BrowserWindow
 }
 
+/**
+ * Custom injectable item options
+ */
 export interface InjectableOpts {
   name: string
   inject: any
 }
 
 export interface Options {
+  /**
+   * Windows will be created when app is ready
+   */
   window: WindowOpts[] | (() => WindowOpts | Promise<WindowOpts>)[] | BrowserWindow | (() => BrowserWindow | Promise<BrowserWindow>)
+  /**
+   * Automatically initialized controller
+   */
   controllers: ControllerClass[]
+  /**
+   * Custom injectable items
+   */
   injects?: InjectableOpts[]
 }
 
+/**
+ * Response of Ipc communication
+ */
+export interface IpcResponse<T> {
+  data: T
+  error?: any
+}
+
+/**
+ * Create and initialize Einf app
+ */
 export async function createEinf({ window, controllers, injects = [] }: Options) {
   if (!checkPackageExists('electron'))
     throw new Error('Einf is a electron framework, please install electron first')
+
+  await app.whenReady()
 
   const logger = createLogger()
   // init windows

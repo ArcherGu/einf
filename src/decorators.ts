@@ -1,5 +1,8 @@
 import { DEFAULT_WIN_NAME, INJECTABLE, INJECT_NAME, INJECT_TYPE, IPC_INVOKE, IPC_ON, IPC_WIN_NAME, PARAMTYPES_METADATA } from './constants'
 
+/**
+ * Ipc invoke decorator
+ */
 export function IpcInvoke(event: string): MethodDecorator {
   if (!event)
     throw new Error('ipc invoke event is required')
@@ -9,6 +12,9 @@ export function IpcInvoke(event: string): MethodDecorator {
   }
 }
 
+/**
+ * Ipc on decorator
+ */
 export function IpcOn(event: string, name: string = DEFAULT_WIN_NAME): MethodDecorator {
   if (!event)
     throw new Error('ipc on event is required')
@@ -19,18 +25,27 @@ export function IpcOn(event: string, name: string = DEFAULT_WIN_NAME): MethodDec
   }
 }
 
+/**
+ * Controller decorator, help to initialize controller
+ */
 export function Controller(): ClassDecorator {
   return (_) => {
     // do nothing
   }
 }
 
+/**
+ * Injectable decorator, help to inject service
+ */
 export function Injectable(): ClassDecorator {
   return (target) => {
     Reflect.defineMetadata(INJECTABLE, INJECT_TYPE.CLASS, target)
   }
 }
 
+/**
+ * Inject decorator, help to inject custom injectable item
+ */
 export function Inject(name: string): ParameterDecorator {
   if (!name)
     throw new Error('inject name is required')
@@ -42,6 +57,9 @@ export function Inject(name: string): ParameterDecorator {
   }
 }
 
+/**
+ * Window decorator, help to inject window
+ */
 export function Window(name = DEFAULT_WIN_NAME): ParameterDecorator {
   return (target, _, index) => {
     const param = Reflect.getMetadata(PARAMTYPES_METADATA, target)[index]
