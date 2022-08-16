@@ -44,10 +44,13 @@ jobs:
       - name: Install deps
         run: pnpm i
 
-      - name: Build and Test
+      - name: Build
+        run: pnpm build
+
+      - name: Test
         uses: GabrielBB/xvfb-action@v1
         with:
-          run: pnpm build && pnpm test
+          run: pnpm test
 
   release:
     runs-on: ubuntu-latest
