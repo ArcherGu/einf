@@ -34,7 +34,8 @@
   },
   "dependencies": {
     "check-package-exists": "^1.1.0",
-    "colorette": "^2.0.19"
+    "colorette": "^2.0.19",
+    "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
     "@lightwing/eslint-config": "0.0.4",

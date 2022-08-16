@@ -8,6 +8,7 @@ specifiers:
   electron: ^20.0.2
   eslint: 8.22.0
   lint-staged: 13.0.3
+  reflect-metadata: ^0.1.13
   simple-git-hooks: 2.8.0
   tsup: 6.2.2
   typescript: 4.7.4
@@ -16,6 +17,7 @@ specifiers:
 dependencies:
   check-package-exists: 1.1.0
   colorette: 2.0.19
+  reflect-metadata: 0.1.13
 
 devDependencies:
   '@lightwing/eslint-config': 0.0.4_4rv7y5c6xz3vfxwhbrcxxi73bq
@@ -3165,6 +3167,10 @@ packages:
     dependencies:
       picomatch: 2.3.1
     dev: true
+
+  /reflect-metadata/0.1.13:
+    resolution: {integrity: sha512-Ts1Y/anZELhSsjMcU605fU9RE4Oi3p5ORujwbIKXfWa+0Zxs510Qrmrce5/Jowq3cHSZSJqBjypxmHarc+vEWg==}
+    dev: false
 
   /regexp-tree/0.1.24:
     resolution: {integrity: sha512-s2aEVuLhvnVJW6s/iPgEGK6R+/xngd2jNQ+xy4bXNDKxZKJH6jpPHY6kVeVv1IeLCHgswRj+Kl3ELaDjG6V1iw==}
