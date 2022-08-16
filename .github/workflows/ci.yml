@@ -44,9 +44,10 @@ jobs:
       - name: Install deps
         run: pnpm i
 
-      # Runs a set of commands using the runners shell
       - name: Build and Test
-        run: pnpm build && pnpm test
+        uses: GabrielBB/xvfb-action@v1
+        with:
+          run: pnpm build && pnpm test
 
   release:
     runs-on: ubuntu-latest
