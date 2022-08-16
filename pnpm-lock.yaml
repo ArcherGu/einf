@@ -5,7 +5,7 @@ specifiers:
   '@types/node': 18.7.5
   check-package-exists: ^1.1.0
   colorette: ^2.0.19
-  electron: ^20.0.2
+  electron: 20.0.2
   eslint: 8.22.0
   lint-staged: 13.0.3
   simple-git-hooks: 2.8.0
