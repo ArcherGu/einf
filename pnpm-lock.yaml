@@ -14,7 +14,7 @@ specifiers:
   tsup: 6.2.2
   typescript: 4.7.4
   vite: 3.0.8
-  vite-plugin-doubleshot: 0.1.0-beta.1
+  vite-plugin-doubleshot: 0.1.0-beta.2
   vitest: 0.22.0
 
 dependencies:
@@ -33,7 +33,7 @@ devDependencies:
   tsup: 6.2.2_typescript@4.7.4
   typescript: 4.7.4
   vite: 3.0.8
-  vite-plugin-doubleshot: 0.1.0-beta.1_bp6dmpd6uvw2anw2nx2oxdywna
+  vite-plugin-doubleshot: 0.1.0-beta.2_bp6dmpd6uvw2anw2nx2oxdywna
   vitest: 0.22.0
 
 packages:
@@ -160,8 +160,8 @@ packages:
       js-tokens: 4.0.0
     dev: true
 
-  /@doubleshot/builder/0.1.0-beta.1_7ylu74qx7r5lnp6lmhbcabyjxa:
-    resolution: {integrity: sha512-2QiqisHDpUQ6ObxdRGUTzKtPXenLgw2YkDSrvL3u1Ki43OLGpa9a1X8ixsr0tXVJT4H5QlztDOAd6CnaqDXThQ==}
+  /@doubleshot/builder/0.1.0-beta.2_7ylu74qx7r5lnp6lmhbcabyjxa:
+    resolution: {integrity: sha512-51PnjPlRYPrffrBvPPMiTF7Dqos2wcrakJ+YNIOQ+4Cb6c2M69kocVVW2E8gZQLIpmAOPxkFOqTsiF1X+dwsWg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     peerDependencies:
@@ -174,12 +174,12 @@ packages:
         optional: true
     dependencies:
       '@swc/core': 1.2.233
-      bundle-require: 3.0.4_esbuild@0.14.54
+      bundle-require: 3.0.4_esbuild@0.15.3
       cac: 6.7.12
       check-package-exists: 1.1.0
       colorette: 2.0.19
       electron: 20.0.2
-      esbuild: 0.14.54
+      esbuild: 0.15.3
       joycon: 3.1.1
       resolve-from: 5.0.0
       tsup: 6.2.2_d7vizirx3o76bb2za5bcia5nru
@@ -865,16 +865,6 @@ packages:
     resolution: {integrity: sha512-qwVpFEHNfhYJIzNRBvd2C1kyo6jz3ZSMPyyuR47OPdiKWlbYnZNyDWuyR175qDnAJLiCo5fBBqPb3RiXgWlkOQ==}
     dependencies:
       semver: 7.3.7
-    dev: true
-
-  /bundle-require/3.0.4_esbuild@0.14.54:
-    resolution: {integrity: sha512-VXG6epB1yrLAvWVQpl92qF347/UXmncQj7J3U8kZEbdVZ1ZkQyr4hYeL/9RvcE8vVVdp53dY78Fd/3pqfRqI1A==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
-    peerDependencies:
-      esbuild: '>=0.13'
-    dependencies:
-      esbuild: 0.14.54
-      load-tsconfig: 0.2.3
     dev: true
 
   /bundle-require/3.0.4_esbuild@0.15.3:
@@ -4070,13 +4060,13 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-plugin-doubleshot/0.1.0-beta.1_bp6dmpd6uvw2anw2nx2oxdywna:
-    resolution: {integrity: sha512-37MduVmC1NDkJk1YKgIe/nDZj1NEpF34Uo5xuJgZz+W48DF7VTknOXBupEVjT6rdzGQB3HkyfdhzMkCUWZPmDQ==}
+  /vite-plugin-doubleshot/0.1.0-beta.2_bp6dmpd6uvw2anw2nx2oxdywna:
+    resolution: {integrity: sha512-XwXlve6na7I3grkaEoZSSUMwLM5ITeIYSelQfQAiueEmDlE1O+Leqb6vFqoV1ADJGMw/Rvs3ZFmcx1rNlModgQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
-      '@doubleshot/builder': 0.1.0-beta.1_7ylu74qx7r5lnp6lmhbcabyjxa
+      '@doubleshot/builder': 0.1.0-beta.2_7ylu74qx7r5lnp6lmhbcabyjxa
       vite: 3.0.8
     transitivePeerDependencies:
       - debug
