@@ -7,13 +7,13 @@ specifiers:
   colorette: ^2.0.19
   electron: 20.0.2
   eslint: 8.22.0
-  execa: ^6.1.0
+  execa: 6.1.0
   lint-staged: 13.0.3
   reflect-metadata: ^0.1.13
   simple-git-hooks: 2.8.0
   tsup: 6.2.2
   typescript: 4.7.4
-  vite: ^3.0.7
+  vite: 3.0.8
   vite-plugin-doubleshot: 0.1.0-beta.1
   vitest: 0.22.0
 
@@ -32,8 +32,8 @@ devDependencies:
   simple-git-hooks: 2.8.0
   tsup: 6.2.2_typescript@4.7.4
   typescript: 4.7.4
-  vite: 3.0.7
-  vite-plugin-doubleshot: 0.1.0-beta.1_dobqqxopte7oj5tevoljsso5fm
+  vite: 3.0.8
+  vite-plugin-doubleshot: 0.1.0-beta.1_bp6dmpd6uvw2anw2nx2oxdywna
   vitest: 0.22.0
 
 packages:
@@ -4070,14 +4070,14 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-plugin-doubleshot/0.1.0-beta.1_dobqqxopte7oj5tevoljsso5fm:
+  /vite-plugin-doubleshot/0.1.0-beta.1_bp6dmpd6uvw2anw2nx2oxdywna:
     resolution: {integrity: sha512-37MduVmC1NDkJk1YKgIe/nDZj1NEpF34Uo5xuJgZz+W48DF7VTknOXBupEVjT6rdzGQB3HkyfdhzMkCUWZPmDQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
       '@doubleshot/builder': 0.1.0-beta.1_7ylu74qx7r5lnp6lmhbcabyjxa
-      vite: 3.0.7
+      vite: 3.0.8
     transitivePeerDependencies:
       - debug
       - electron
@@ -4088,8 +4088,8 @@ packages:
       - typescript
     dev: true
 
-  /vite/3.0.7:
-    resolution: {integrity: sha512-dILhvKba1mbP1wCezVQx/qhEK7/+jVn9ciadEcyKMMhZpsuAi/eWZfJRMkmYlkSFG7Qq9NvJbgFq4XOBxugJsA==}
+  /vite/3.0.8:
+    resolution: {integrity: sha512-AOZ4eN7mrkJiOLuw8IA7piS4IdOQyQCA81GxGsAQvAZzMRi9ZwGB3TOaYsj4uLAWK46T5L4AfQ6InNGlxX30IQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -4145,7 +4145,7 @@ packages:
       local-pkg: 0.4.2
       tinypool: 0.2.4
       tinyspy: 1.0.0
-      vite: 3.0.7
+      vite: 3.0.8
     transitivePeerDependencies:
       - less
       - sass
