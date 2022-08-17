@@ -9,8 +9,9 @@ export class AppController {
     @Inject('IS_DEV') private isDev: boolean,
     @Window() private win: BrowserWindow,
   ) {
+    win.setTitle('Einf Test')
+    console.log(`Get window title: ${win.getTitle()}`)
     setTimeout(() => {
-      console.log(`Get window title: ${win.getTitle()}`)
       this.replyMsg(this.appService.createMsg('hello, this is the main process'))
     }, 2000)
   }
