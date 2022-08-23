@@ -1,4 +1,4 @@
-import { DEFAULT_WIN_NAME, INJECTABLE, INJECT_NAME, INJECT_TYPE, IPC_INVOKE, IPC_ON, IPC_WIN_NAME, PARAMTYPES_METADATA } from './constants'
+import { DEFAULT_WIN_NAME, INJECTABLE, INJECT_NAME, INJECT_TYPE, IPC_INVOKE, IPC_SEND, IPC_WIN_NAME, PARAMTYPES_METADATA } from './constants'
 
 /**
  * Ipc invoke decorator
@@ -13,14 +13,16 @@ export function IpcInvoke(event: string): MethodDecorator {
 }
 
 /**
- * Ipc on decorator
+ * Ipc send decorator. The return value will be sent by the webContents of the specified window
+ *
+ * webContents.send --> @IpcSend
  */
-export function IpcOn(event: string, name: string = DEFAULT_WIN_NAME): MethodDecorator {
+export function IpcSend(event: string, name: string = DEFAULT_WIN_NAME): MethodDecorator {
   if (!event)
-    throw new Error('ipc on event is required')
+    throw new Error('ipc send event is required')
 
   return (target, propertyName) => {
-    Reflect.defineMetadata(IPC_ON, event, target, propertyName)
+    Reflect.defineMetadata(IPC_SEND, event, target, propertyName)
     Reflect.defineMetadata(IPC_WIN_NAME, name, target, propertyName)
   }
 }

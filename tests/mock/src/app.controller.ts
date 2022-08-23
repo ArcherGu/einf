@@ -1,5 +1,5 @@
 import { BrowserWindow, app } from 'electron'
-import { Controller, Inject, IpcInvoke, IpcOn, Window } from '../../../dist'
+import { Controller, Inject, IpcInvoke, IpcSend, Window } from '../../../dist'
 import { AppService } from './app.service'
 
 @Controller()
@@ -16,7 +16,7 @@ export class AppController {
     }, 2000)
   }
 
-  @IpcOn('reply-msg')
+  @IpcSend('reply-msg')
   public replyMsg(msg: string) {
     return msg
   }

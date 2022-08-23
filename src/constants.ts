@@ -7,7 +7,7 @@ export const INJECT_TYPE = {
   WINDOW: 'window',
 }
 export const IPC_INVOKE = 'ipc:invoke'
-export const IPC_ON = 'ipc:on'
+export const IPC_SEND = 'ipc:send'
 export const IPC_WIN_NAME = 'ipc:win-name'
 export const DEFAULT_WIN_NAME = 'main'
 
