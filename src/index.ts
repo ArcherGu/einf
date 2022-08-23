@@ -2,7 +2,7 @@ import 'reflect-metadata'
 import type { BrowserWindow } from 'electron'
 import { app, ipcMain } from 'electron'
 import { checkPackageExists } from 'check-package-exists'
-import { DEFAULT_WIN_NAME, INJECTABLE, INJECT_NAME, INJECT_TYPE, IPC_INVOKE, IPC_SEND, IPC_WIN_NAME, PARAMTYPES_METADATA } from './constants'
+import { DEFAULT_WIN_NAME, INJECTABLE, INJECT_NAME, INJECT_TYPE, IPC_HANDLE, IPC_SEND, IPC_WIN_NAME, PARAMTYPES_METADATA } from './constants'
 import { createLogger } from './log'
 export * from './decorators'
 
@@ -125,7 +125,7 @@ export async function createEinf({ window, controllers, injects = [] }: Options)
 
     funcs.forEach((funcName) => {
       let event: string | null = null
-      event = Reflect.getMetadata(IPC_INVOKE, proto, funcName)
+      event = Reflect.getMetadata(IPC_HANDLE, proto, funcName)
       if (event) {
         ipcMain.handle(event, async (_, ...args) => {
           try {

@@ -1,14 +1,16 @@
-import { DEFAULT_WIN_NAME, INJECTABLE, INJECT_NAME, INJECT_TYPE, IPC_INVOKE, IPC_SEND, IPC_WIN_NAME, PARAMTYPES_METADATA } from './constants'
+import { DEFAULT_WIN_NAME, INJECTABLE, INJECT_NAME, INJECT_TYPE, IPC_HANDLE, IPC_SEND, IPC_WIN_NAME, PARAMTYPES_METADATA } from './constants'
 
 /**
- * Ipc invoke decorator
+ * Ipc handle decorator. It will be called by ipcRenderer.invoke
+ *
+ * ipcMain.handle --> @IpcHandle
  */
-export function IpcInvoke(event: string): MethodDecorator {
+export function IpcHandle(event: string): MethodDecorator {
   if (!event)
-    throw new Error('ipc invoke event is required')
+    throw new Error('ipc handle event is required')
 
   return (target, propertyName) => {
-    Reflect.defineMetadata(IPC_INVOKE, event, target, propertyName)
+    Reflect.defineMetadata(IPC_HANDLE, event, target, propertyName)
   }
 }
 
