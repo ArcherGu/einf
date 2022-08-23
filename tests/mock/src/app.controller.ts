@@ -1,5 +1,5 @@
 import { BrowserWindow, app } from 'electron'
-import { Controller, Inject, IpcHandle, IpcSend, Window } from '../../../dist'
+import { Controller, Inject, IpcHandle, IpcOn, IpcSend, Window } from '../../../dist'
 import { AppService } from './app.service'
 
 @Controller()
@@ -27,7 +27,7 @@ export class AppController {
     return `main process received your message, current is run in ${this.isDev ? 'development' : 'production'} mode`
   }
 
-  @IpcHandle('print-log')
+  @IpcOn('print-log')
   printLog(log: string) {
     console.log(`Get log: ${log}`)
   }

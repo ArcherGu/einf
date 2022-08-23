@@ -8,6 +8,7 @@ export const INJECT_TYPE = {
 }
 export const IPC_HANDLE = 'ipc:handle'
 export const IPC_SEND = 'ipc:send'
+export const IPC_ON = 'ipc:on'
 export const IPC_WIN_NAME = 'ipc:win-name'
 export const DEFAULT_WIN_NAME = 'main'
 

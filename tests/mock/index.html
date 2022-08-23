@@ -18,13 +18,17 @@
       exit,
     } = window.electron
 
+    printLog("Call ipc on")
+
     onReplyMsg(async (msg) => {
-      await printLog(msg)
+      printLog(msg)
       const {
         data: msgFromMain
       } = await sendMsg("hello, this is the renderer")
-      await printLog(msgFromMain)
-      exit()
+      printLog(msgFromMain)
+      setTimeout(() => {
+        exit()
+      }, 500);
     })
   </script>
 </body>

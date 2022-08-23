@@ -23,6 +23,10 @@ describe('Einf Test', () => {
     logs = await run()
   }, Infinity)
 
+  test('IpcOn', () => {
+    expect(logs).toContain('Call ipc on')
+  })
+
   test('IpcSend', () => {
     expect(logs).toContain('hello, this is the main process')
   })
