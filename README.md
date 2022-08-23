@@ -66,7 +66,7 @@ Provide at least one controller to start the application, `app.controller.ts`:
 ```ts
 import type { BrowserWindow } from 'electron'
 import { app } from 'electron'
-import { Controller, Inject, IpcInvoke, IpcOn, Window } from 'einf'
+import { Controller, Inject, IpcHandle, IpcSend, Window } from 'einf'
 import type { AppService } from './app.service'
 
 @Controller()
@@ -77,18 +77,18 @@ export class AppController {
     @Window() private win: BrowserWindow,
   ) {}
 
-  @IpcOn('reply-msg')
+  @IpcSend('reply-msg')
   public replyMsg(msg: string) {
     return msg
   }
 
-  @IpcInvoke('send-msg')
+  @IpcHandle('send-msg')
   public sendMsg(msg: string) {
     console.log(msg)
     return 'Get msg'
   }
 
-  @IpcInvoke('exit')
+  @IpcHandle('exit')
   public exit() {
     app.quit()
   }
