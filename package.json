@@ -26,14 +26,13 @@
     "build": "tsup",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test": "vitest run",
+    "test": "tsup && vitest run",
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
     "electron": ">=16.0.0"
   },
   "dependencies": {
-    "check-package-exists": "^1.1.0",
     "colorette": "^2.0.19",
     "reflect-metadata": "^0.1.13"
   },
