@@ -15,9 +15,13 @@ export const colorize = (type: LOG_TYPE, data: any) => {
   return colors[color](data)
 }
 
+export const makeLabel = (name: string, type?: LOG_TYPE) => {
+  return `${colors.dim('[')}${type ? colorize(type, name) : name}${colors.dim(']')}`
+}
+
 export type Logger = ReturnType<typeof createLogger>
 
-export const createLogger = () => {
+export const createLogger = (name = 'Einf') => {
   return {
     success(...args: any[]) {
       return this.print('success', ...args)
@@ -36,7 +40,7 @@ export const createLogger = () => {
     },
 
     log(...args: any[]) {
-      console.log(...args)
+      console.log(name && makeLabel(name), ...args)
     },
 
     break() {
@@ -50,11 +54,13 @@ export const createLogger = () => {
       switch (type) {
         case 'error': {
           return console.error(
+            name && makeLabel(name, type),
             ...data.map(item => colorize(type, item)),
           )
         }
         default:
           console.log(
+            name && makeLabel(name, type),
             ...data.map(item => colorize(type, item)),
           )
       }

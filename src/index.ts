@@ -3,6 +3,7 @@ import type { BrowserWindow } from 'electron'
 import { app, ipcMain } from 'electron'
 import { DEFAULT_WIN_NAME, INJECTABLE, INJECT_NAME, INJECT_TYPE, IPC_HANDLE, IPC_ON, IPC_SEND, IPC_WIN_NAME, PARAMTYPES_METADATA } from './constants'
 import { createLogger } from './log'
+export { createLogger } from './log'
 export * from './decorators'
 
 type Construct<T = any> = new (...args: Array<any>) => T
