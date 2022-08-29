@@ -49,7 +49,7 @@ export const createLogger = () => {
     ) {
       switch (type) {
         case 'error': {
-          return console.log(
+          return console.error(
             ...data.map(item => colorize(type, item)),
           )
         }
