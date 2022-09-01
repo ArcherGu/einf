@@ -16,7 +16,7 @@ Einf is a simple electron main process framework, which provides some decorators
 
 - 🪟 Support custom items injection and window object injection.
 
-- 🔗 Automatic ipc event binding to reduce duplication of code.
+- 🔗 Automatic ipc channel binding to reduce duplication of code.
 
 - 📦 Tiny size, the whole framework is less than 10kb.
 

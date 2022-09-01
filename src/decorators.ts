@@ -5,12 +5,12 @@ import { DEFAULT_WIN_NAME, INJECTABLE, INJECT_NAME, INJECT_TYPE, IPC_HANDLE, IPC
  *
  * ipcMain.handle --> @IpcHandle
  */
-export function IpcHandle(event: string): MethodDecorator {
-  if (!event)
-    throw new Error('ipc handle event is required')
+export function IpcHandle(channel: string): MethodDecorator {
+  if (!channel)
+    throw new Error('ipc handle channel is required')
 
   return (target, propertyName) => {
-    Reflect.defineMetadata(IPC_HANDLE, event, target, propertyName)
+    Reflect.defineMetadata(IPC_HANDLE, channel, target, propertyName)
   }
 }
 
@@ -19,12 +19,12 @@ export function IpcHandle(event: string): MethodDecorator {
  *
  * ipcMain.on --> @IpcOn
  */
-export function IpcOn(event: string): MethodDecorator {
-  if (!event)
-    throw new Error('ipc on event is required')
+export function IpcOn(channel: string): MethodDecorator {
+  if (!channel)
+    throw new Error('ipc on channel is required')
 
   return (target, propertyName) => {
-    Reflect.defineMetadata(IPC_ON, event, target, propertyName)
+    Reflect.defineMetadata(IPC_ON, channel, target, propertyName)
   }
 }
 
@@ -33,13 +33,13 @@ export function IpcOn(event: string): MethodDecorator {
  *
  * webContents.send --> @IpcSend
  */
-export function IpcSend(event: string, name: string = DEFAULT_WIN_NAME): MethodDecorator {
-  if (!event)
-    throw new Error('ipc send event is required')
+export function IpcSend(channel: string, windowName: string = DEFAULT_WIN_NAME): MethodDecorator {
+  if (!channel)
+    throw new Error('ipc send channel is required')
 
   return (target, propertyName) => {
-    Reflect.defineMetadata(IPC_SEND, event, target, propertyName)
-    Reflect.defineMetadata(IPC_WIN_NAME, name, target, propertyName)
+    Reflect.defineMetadata(IPC_SEND, channel, target, propertyName)
+    Reflect.defineMetadata(IPC_WIN_NAME, windowName, target, propertyName)
   }
 }
 

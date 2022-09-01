@@ -122,8 +122,8 @@ export async function createEinf({ window, controllers, injects = [] }: Options)
 
     funcs.forEach((funcName) => {
       if (Reflect.getMetadata(IPC_HANDLE, proto, funcName)) {
-        const event = Reflect.getMetadata(IPC_HANDLE, proto, funcName)
-        ipcMain.handle(event, async (e, ...args) => {
+        const channel = Reflect.getMetadata(IPC_HANDLE, proto, funcName)
+        ipcMain.handle(channel, async (e, ...args) => {
           try {
             // eslint-disable-next-line no-useless-call
             const result = await controller[funcName].apply(controller, [...args, e])
@@ -142,8 +142,8 @@ export async function createEinf({ window, controllers, injects = [] }: Options)
         })
       }
       else if (Reflect.getMetadata(IPC_ON, proto, funcName)) {
-        const event = Reflect.getMetadata(IPC_ON, proto, funcName)
-        ipcMain.on(event, async (e, ...args) => {
+        const channel = Reflect.getMetadata(IPC_ON, proto, funcName)
+        ipcMain.on(channel, async (e, ...args) => {
           try {
             // eslint-disable-next-line no-useless-call
             await controller[funcName].apply(controller, [...args, e])
@@ -154,7 +154,7 @@ export async function createEinf({ window, controllers, injects = [] }: Options)
         })
       }
       else if (Reflect.getMetadata(IPC_SEND, proto, funcName)) {
-        const event = Reflect.getMetadata(IPC_SEND, proto, funcName)
+        const channel = Reflect.getMetadata(IPC_SEND, proto, funcName)
 
         const winName = Reflect.getMetadata(IPC_WIN_NAME, proto, funcName)
         const winInfo = windows.find(item => item.name === winName)
@@ -164,12 +164,12 @@ export async function createEinf({ window, controllers, injects = [] }: Options)
 
           controller[funcName] = async (...args: any[]) => {
             const result = await func.apply(controller, args)
-            webContents.send(event!, result)
+            webContents.send(channel!, result)
             return result
           }
         }
         else {
-          logger.warn(`Can not find window [${winName}] to emit event [${event}]`)
+          logger.warn(`Can not find window [${winName}] to send data through [${channel}]`)
         }
       }
     })
