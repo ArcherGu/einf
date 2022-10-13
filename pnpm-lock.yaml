@@ -12,7 +12,7 @@ specifiers:
   simple-git-hooks: 2.8.0
   tsup: 6.2.3
   typescript: 4.8.4
-  vite: 3.1.7
+  vite: 3.1.8
   vite-plugin-doubleshot: 0.1.0-beta.2
   vitest: 0.24.1
 
@@ -30,8 +30,8 @@ devDependencies:
   simple-git-hooks: 2.8.0
   tsup: 6.2.3_typescript@4.8.4
   typescript: 4.8.4
-  vite: 3.1.7
-  vite-plugin-doubleshot: 0.1.0-beta.2_6n7zxgjmkgmk342atbecn2sfwa
+  vite: 3.1.8
+  vite-plugin-doubleshot: 0.1.0-beta.2_5h2vncy7ahzo3pko7belnlqr2m
   vitest: 0.24.1
 
 packages:
@@ -3982,14 +3982,14 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-plugin-doubleshot/0.1.0-beta.2_6n7zxgjmkgmk342atbecn2sfwa:
+  /vite-plugin-doubleshot/0.1.0-beta.2_5h2vncy7ahzo3pko7belnlqr2m:
     resolution: {integrity: sha512-XwXlve6na7I3grkaEoZSSUMwLM5ITeIYSelQfQAiueEmDlE1O+Leqb6vFqoV1ADJGMw/Rvs3ZFmcx1rNlModgQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
       '@doubleshot/builder': 0.1.0-beta.2_5avlf3djqoxnhkgh4tixc6scny
-      vite: 3.1.7
+      vite: 3.1.8
     transitivePeerDependencies:
       - debug
       - electron
@@ -4000,8 +4000,8 @@ packages:
       - typescript
     dev: true
 
-  /vite/3.1.7:
-    resolution: {integrity: sha512-5vCAmU4S8lyVdFCInu9M54f/g8qbOMakVw5xJ4pjoaDy5wgy9sLLZkGdSLN52dlsBqh0tBqxjaqqa8LgPqwRAA==}
+  /vite/3.1.8:
+    resolution: {integrity: sha512-m7jJe3nufUbuOfotkntGFupinL/fmuTNuQmiVE7cH2IZMuf4UbfbGYMUT3jVWgGYuRVLY9j8NnrRqgw5rr5QTg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -4059,7 +4059,7 @@ packages:
       tinybench: 2.3.0
       tinypool: 0.3.0
       tinyspy: 1.0.2
-      vite: 3.1.7
+      vite: 3.1.8
     transitivePeerDependencies:
       - less
       - sass
