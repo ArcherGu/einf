@@ -10,7 +10,7 @@ specifiers:
   lint-staged: 13.0.3
   reflect-metadata: ^0.1.13
   simple-git-hooks: 2.8.1
-  tsup: 6.3.0
+  tsup: 6.4.0
   typescript: 4.8.4
   vite: 3.2.2
   vite-plugin-doubleshot: 0.1.0-beta.2
@@ -28,7 +28,7 @@ devDependencies:
   execa: 6.1.0
   lint-staged: 13.0.3
   simple-git-hooks: 2.8.1
-  tsup: 6.3.0_typescript@4.8.4
+  tsup: 6.4.0_typescript@4.8.4
   typescript: 4.8.4
   vite: 3.2.2
   vite-plugin-doubleshot: 0.1.0-beta.2_zase2t7la5qbrtihjpobratutq
@@ -156,7 +156,7 @@ packages:
         optional: true
     dependencies:
       '@swc/core': 1.2.233
-      bundle-require: 3.1.0_esbuild@0.15.10
+      bundle-require: 3.1.2_esbuild@0.15.10
       cac: 6.7.12
       check-package-exists: 1.1.0
       colorette: 2.0.19
@@ -164,7 +164,7 @@ packages:
       esbuild: 0.15.10
       joycon: 3.1.1
       resolve-from: 5.0.0
-      tsup: 6.3.0_en2ib6lwipczzxprorcp7rskyq
+      tsup: 6.4.0_en2ib6lwipczzxprorcp7rskyq
       wait-on: 6.0.1
     transitivePeerDependencies:
       - debug
@@ -841,8 +841,8 @@ packages:
       semver: 7.3.7
     dev: true
 
-  /bundle-require/3.1.0_esbuild@0.15.10:
-    resolution: {integrity: sha512-IIXtAO7fKcwPHNPt9kY/WNVJqy7NDy6YqJvv6ENH0TOZoJ+yjpEsn1w40WKZbR2ibfu5g1rfgJTvmFHpm5aOMA==}
+  /bundle-require/3.1.2_esbuild@0.15.10:
+    resolution: {integrity: sha512-Of6l6JBAxiyQ5axFxUM6dYeP/W7X2Sozeo/4EYB9sJhL+dqL7TKjg+shwxp6jlu/6ZSERfsYtIpSJ1/x3XkAEA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     peerDependencies:
       esbuild: '>=0.13'
@@ -3220,17 +3220,17 @@ packages:
     dev: true
     optional: true
 
-  /rollup/2.78.0:
-    resolution: {integrity: sha512-4+YfbQC9QEVvKTanHhIAFVUFSRsezvQF8vFOJwtGfb9Bb+r014S+qryr9PSmw8x6sMnPkmFBGAvIFVQxvJxjtg==}
+  /rollup/2.79.1:
+    resolution: {integrity: sha512-uKxbd0IhMZOhjAiD5oAFp7BqvkA4Dv47qpOCtaNvng4HBwdbWtdOh8f5nZNuk2rp51PMGk3bzfWu5oayNEuYnw==}
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
 
-  /rollup/2.79.1:
-    resolution: {integrity: sha512-uKxbd0IhMZOhjAiD5oAFp7BqvkA4Dv47qpOCtaNvng4HBwdbWtdOh8f5nZNuk2rp51PMGk3bzfWu5oayNEuYnw==}
-    engines: {node: '>=10.0.0'}
+  /rollup/3.2.5:
+    resolution: {integrity: sha512-/Ha7HhVVofduy+RKWOQJrxe4Qb3xyZo+chcpYiD8SoQa4AG7llhupUtyfKSSrdBM2mWJjhM8wZwmbY23NmlIYw==}
+    engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
@@ -3591,8 +3591,8 @@ packages:
     resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
     dev: true
 
-  /tsup/6.3.0_en2ib6lwipczzxprorcp7rskyq:
-    resolution: {integrity: sha512-IaNQO/o1rFgadLhNonVKNCT2cks+vvnWX3DnL8sB87lBDqRvJXHENr5lSPJlqwplUlDxSwZK8dSg87rgBu6Emw==}
+  /tsup/6.4.0_en2ib6lwipczzxprorcp7rskyq:
+    resolution: {integrity: sha512-4OlbqIK/SF+cJp0mMqPM2pKULvgj/1S2Gm3I1aFoFGIryUOyIqPZBoqKkqVQT6uFtWJ5AHftIv0riXKfHox1zQ==}
     engines: {node: '>=14'}
     hasBin: true
     peerDependencies:
@@ -3608,7 +3608,7 @@ packages:
         optional: true
     dependencies:
       '@swc/core': 1.2.233
-      bundle-require: 3.1.0_esbuild@0.15.10
+      bundle-require: 3.1.2_esbuild@0.15.10
       cac: 6.7.12
       chokidar: 3.5.3
       debug: 4.3.4
@@ -3618,7 +3618,7 @@ packages:
       joycon: 3.1.1
       postcss-load-config: 3.1.4
       resolve-from: 5.0.0
-      rollup: 2.78.0
+      rollup: 3.2.5
       source-map: 0.8.0-beta.0
       sucrase: 3.25.0
       tree-kill: 1.2.2
@@ -3628,8 +3628,8 @@ packages:
       - ts-node
     dev: true
 
-  /tsup/6.3.0_typescript@4.8.4:
-    resolution: {integrity: sha512-IaNQO/o1rFgadLhNonVKNCT2cks+vvnWX3DnL8sB87lBDqRvJXHENr5lSPJlqwplUlDxSwZK8dSg87rgBu6Emw==}
+  /tsup/6.4.0_typescript@4.8.4:
+    resolution: {integrity: sha512-4OlbqIK/SF+cJp0mMqPM2pKULvgj/1S2Gm3I1aFoFGIryUOyIqPZBoqKkqVQT6uFtWJ5AHftIv0riXKfHox1zQ==}
     engines: {node: '>=14'}
     hasBin: true
     peerDependencies:
@@ -3644,7 +3644,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      bundle-require: 3.1.0_esbuild@0.15.10
+      bundle-require: 3.1.2_esbuild@0.15.10
       cac: 6.7.12
       chokidar: 3.5.3
       debug: 4.3.4
@@ -3654,7 +3654,7 @@ packages:
       joycon: 3.1.1
       postcss-load-config: 3.1.4
       resolve-from: 5.0.0
-      rollup: 2.78.0
+      rollup: 3.2.5
       source-map: 0.8.0-beta.0
       sucrase: 3.25.0
       tree-kill: 1.2.2
