@@ -4,7 +4,7 @@ specifiers:
   '@lightwing/eslint-config': 0.0.8
   '@types/node': 18.11.9
   colorette: ^2.0.19
-  electron: 21.2.3
+  electron: 21.3.0
   eslint: 8.27.0
   execa: 6.1.0
   lint-staged: 13.0.3
@@ -23,7 +23,7 @@ dependencies:
 devDependencies:
   '@lightwing/eslint-config': 0.0.8_e3uo4sehh4zr4i6m57mkkxxv7y
   '@types/node': 18.11.9
-  electron: 21.2.3
+  electron: 21.3.0
   eslint: 8.27.0
   execa: 6.1.0
   lint-staged: 13.0.3
@@ -31,7 +31,7 @@ devDependencies:
   tsup: 6.5.0_typescript@4.9.3
   typescript: 4.9.3
   vite: 3.2.4_@types+node@18.11.9
-  vite-plugin-doubleshot: 0.1.0-beta.2_udaoksvkta5hgxlv6j6p622o5e
+  vite-plugin-doubleshot: 0.1.0-beta.2_e5d4lspsdj2t6s5psy4a74ce7y
   vitest: 0.25.2
 
 packages:
@@ -142,7 +142,7 @@ packages:
       js-tokens: 4.0.0
     dev: true
 
-  /@doubleshot/builder/0.1.0-beta.2_ryf5rjogi4n6bz6m7j7q4ub65u:
+  /@doubleshot/builder/0.1.0-beta.2_5sjx4lwyoazyq6ucnj2uoxxcfm:
     resolution: {integrity: sha512-51PnjPlRYPrffrBvPPMiTF7Dqos2wcrakJ+YNIOQ+4Cb6c2M69kocVVW2E8gZQLIpmAOPxkFOqTsiF1X+dwsWg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -160,7 +160,7 @@ packages:
       cac: 6.7.12
       check-package-exists: 1.1.0
       colorette: 2.0.19
-      electron: 21.2.3
+      electron: 21.3.0
       esbuild: 0.15.10
       joycon: 3.1.1
       resolve-from: 5.0.0
@@ -1187,8 +1187,8 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: true
 
-  /electron/21.2.3:
-    resolution: {integrity: sha512-Wyj0ri3P8hnWEvX7+2Q1OtNzJI8Qn4V9J+aeypoXh+wtlX/fjfHxi4vZkos/XRncoIeYCeUZ5nhGjsOIQwSElQ==}
+  /electron/21.3.0:
+    resolution: {integrity: sha512-MGRpshN8fBcx4IRuBABIsGDv0tB/MclIFsyFHFFXsBCUc+vIXaE/E6vuWaniGIFSz5WyeuapfTH5IeRb+7yIfw==}
     engines: {node: '>= 10.17.0'}
     hasBin: true
     requiresBuild: true
@@ -3778,13 +3778,13 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-plugin-doubleshot/0.1.0-beta.2_udaoksvkta5hgxlv6j6p622o5e:
+  /vite-plugin-doubleshot/0.1.0-beta.2_e5d4lspsdj2t6s5psy4a74ce7y:
     resolution: {integrity: sha512-XwXlve6na7I3grkaEoZSSUMwLM5ITeIYSelQfQAiueEmDlE1O+Leqb6vFqoV1ADJGMw/Rvs3ZFmcx1rNlModgQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
-      '@doubleshot/builder': 0.1.0-beta.2_ryf5rjogi4n6bz6m7j7q4ub65u
+      '@doubleshot/builder': 0.1.0-beta.2_5sjx4lwyoazyq6ucnj2uoxxcfm
       vite: 3.2.4_@types+node@18.11.9
     transitivePeerDependencies:
       - debug
