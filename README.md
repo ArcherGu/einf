@@ -6,6 +6,18 @@
 A simple electron main process framework.
 <p>
 
+<p align="center">
+  <a href="https://npm.im/mono-release" target="_blank">
+    <img src="https://img.shields.io/npm/v/einf?style=flat-square" alt="NPM Version">
+  </a>
+  <a href="https://npm.im/mono-release" target="_blank">
+    <img src="https://img.shields.io/npm/dw/einf?style=flat-square" alt="NPM Downloads">
+  </a>
+  <a href="https://github.com/ArcherGu/einf/actions/workflows/ci.yml" target="_blank">
+    <img src="https://img.shields.io/github/actions/workflow/status/ArcherGu/einf/ci.yml?style=flat-square" alt="Workflow Status">
+  </a>
+<p>
+
 ## Description
 
 Einf is a simple electron main process framework, which provides some decorators and automatic dependency injection to help you simplify the main process code.
@@ -93,7 +105,6 @@ export class AppController {
     app.quit()
   }
 }
-
 ```
 
 You can also inject service via `@Injectable` decorator, `app.service.ts`:
@@ -107,7 +118,6 @@ export class AppService {
     return `"${msg}" is created by app service`
   }
 }
-
 ```
 
 ## License
