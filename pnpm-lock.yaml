@@ -4,7 +4,7 @@ specifiers:
   '@lightwing/eslint-config': 0.0.11
   '@types/node': 18.14.0
   colorette: ^2.0.19
-  electron: 23.1.0
+  electron: 23.1.1
   eslint: 8.34.0
   execa: 7.0.0
   lint-staged: 13.1.2
@@ -23,7 +23,7 @@ dependencies:
 devDependencies:
   '@lightwing/eslint-config': 0.0.11_7kw3g6rralp5ps6mg3uyzz6azm
   '@types/node': 18.14.0
-  electron: 23.1.0
+  electron: 23.1.1
   eslint: 8.34.0
   execa: 7.0.0
   lint-staged: 13.1.2
@@ -31,7 +31,7 @@ devDependencies:
   tsup: 6.6.3_typescript@4.9.5
   typescript: 4.9.5
   vite: 4.1.4_@types+node@18.14.0
-  vite-plugin-doubleshot: 0.1.0-beta.2_tkroelrbzlryrbokkemqtxr6ca
+  vite-plugin-doubleshot: 0.1.0-beta.2_bqccy4qh77scsydto7vb5gy47a
   vitest: 0.28.5
 
 packages:
@@ -153,7 +153,7 @@ packages:
       js-tokens: 4.0.0
     dev: true
 
-  /@doubleshot/builder/0.1.0-beta.2_5ut7z35rvevac2dbxjgnslnove:
+  /@doubleshot/builder/0.1.0-beta.2_twt6k6fmnkpvvymfkbysdbdkui:
     resolution: {integrity: sha512-51PnjPlRYPrffrBvPPMiTF7Dqos2wcrakJ+YNIOQ+4Cb6c2M69kocVVW2E8gZQLIpmAOPxkFOqTsiF1X+dwsWg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -171,7 +171,7 @@ packages:
       cac: 6.7.14
       check-package-exists: 1.1.0
       colorette: 2.0.19
-      electron: 23.1.0
+      electron: 23.1.1
       esbuild: 0.15.10
       joycon: 3.1.1
       resolve-from: 5.0.0
@@ -1679,8 +1679,8 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: true
 
-  /electron/23.1.0:
-    resolution: {integrity: sha512-LRgACMpVrmjfYWPgCSyJ+TFQ/FPeniOowpO57z0xUcTchfC7EH+5rUncgYN+uMvqePiYDce+ywZeCIFaO8x/Nw==}
+  /electron/23.1.1:
+    resolution: {integrity: sha512-junV1NzPx5T8Mx9+o8fMWK1Q5WOtG5vggiM09PGYg/6zTcGDL3DjGVHeUa/97gx7ErXL37DrFnxNg6+ePWprDg==}
     engines: {node: '>= 12.20.55'}
     hasBin: true
     requiresBuild: true
@@ -4505,13 +4505,13 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-doubleshot/0.1.0-beta.2_tkroelrbzlryrbokkemqtxr6ca:
+  /vite-plugin-doubleshot/0.1.0-beta.2_bqccy4qh77scsydto7vb5gy47a:
     resolution: {integrity: sha512-XwXlve6na7I3grkaEoZSSUMwLM5ITeIYSelQfQAiueEmDlE1O+Leqb6vFqoV1ADJGMw/Rvs3ZFmcx1rNlModgQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
-      '@doubleshot/builder': 0.1.0-beta.2_5ut7z35rvevac2dbxjgnslnove
+      '@doubleshot/builder': 0.1.0-beta.2_twt6k6fmnkpvvymfkbysdbdkui
       vite: 4.1.4_@types+node@18.14.0
     transitivePeerDependencies:
       - debug
