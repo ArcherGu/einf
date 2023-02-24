@@ -21,7 +21,7 @@ describe('Einf Test', () => {
   let logs = ''
   beforeAll(async () => {
     logs = await run()
-  }, Infinity)
+  }, 60 * 1000)
 
   test('IpcOn', () => {
     expect(logs).toContain('Call ipc on')
