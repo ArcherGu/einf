@@ -27,6 +27,11 @@ export class AppController {
     return `main process received your message, current is run in ${this.isDev ? 'development' : 'production'} mode`
   }
 
+  @IpcHandle('error')
+  public throwError() {
+    throw new Error('This is an error from ipc channel')
+  }
+
   @IpcOn('print-log')
   printLog(log: string) {
     console.log(`Get log: ${log}`)

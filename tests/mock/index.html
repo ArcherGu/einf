@@ -13,6 +13,7 @@
   <script type="text/javascript">
     const {
       sendMsg,
+      throwError,
       printLog,
       onReplyMsg,
       exit,
@@ -22,13 +23,18 @@
 
     onReplyMsg(async (msg) => {
       printLog(msg)
-      const {
-        data: msgFromMain
-      } = await sendMsg("hello, this is the renderer")
+      const msgFromMain = await sendMsg("hello, this is the renderer")
       printLog(msgFromMain)
+
+      try {
+        await throwError()
+      } catch (error) {
+        await printLog(error.message)
+      }
+
       setTimeout(() => {
         exit()
-      }, 500);
+      }, 500)
     })
   </script>
 </body>

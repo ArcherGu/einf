@@ -47,4 +47,8 @@ describe('Einf Test', () => {
   test('Window', () => {
     expect(logs).toContain('Get window title: Einf Test')
   })
+
+  test('Error', () => {
+    expect(logs).toContain('This is an error from ipc channel')
+  })
 })
