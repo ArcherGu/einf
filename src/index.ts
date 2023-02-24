@@ -45,14 +45,6 @@ export interface Options {
 }
 
 /**
- * Response of Ipc communication
- */
-export interface IpcResponse<T> {
-  data: T
-  error?: any
-}
-
-/**
  * Create and initialize Einf app
  */
 export async function createEinf({ window, controllers, injects = [] }: Options) {
@@ -128,16 +120,11 @@ export async function createEinf({ window, controllers, injects = [] }: Options)
             // eslint-disable-next-line no-useless-call
             const result = await controller[funcName].apply(controller, [...args, e])
 
-            return {
-              data: result,
-            }
+            return result
           }
-          catch (error) {
+          catch (error: any) {
             logger.error(error)
-            return {
-              data: undefined,
-              error,
-            }
+            throw new Error(error?.message ?? error)
           }
         })
       }
@@ -148,8 +135,9 @@ export async function createEinf({ window, controllers, injects = [] }: Options)
             // eslint-disable-next-line no-useless-call
             await controller[funcName].apply(controller, [...args, e])
           }
-          catch (error) {
+          catch (error: any) {
             logger.error(error)
+            throw new Error(error?.message ?? error)
           }
         })
       }
