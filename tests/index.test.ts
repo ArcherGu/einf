@@ -1,4 +1,4 @@
-import path from 'path'
+import path from 'node:path'
 import { beforeAll, describe, expect, test } from 'vitest'
 import { execa } from 'execa'
 
@@ -38,6 +38,10 @@ describe('Einf Test', () => {
 
   test('Service injection', () => {
     expect(logs).toContain('is created by app service')
+  })
+
+  test('Another service inject to app service', () => {
+    expect(logs).toContain('is created by another service')
   })
 
   test('Custom item injection', () => {

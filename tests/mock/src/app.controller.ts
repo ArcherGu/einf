@@ -27,6 +27,12 @@ export class AppController {
     return `main process received your message, current is run in ${this.isDev ? 'development' : 'production'} mode`
   }
 
+  @IpcHandle('send-another-msg')
+  public sendAnotherMsg(msg: string) {
+    this.printLog(msg)
+    return `main process received your message, and this is another message: ${this.appService.createAnotherMsg(msg)}`
+  }
+
   @IpcHandle('error')
   public throwError() {
     throw new Error('This is an error from ipc channel')
