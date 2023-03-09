@@ -95,7 +95,7 @@ export async function createEinf({ window, controllers, injects = [] }: Options)
           return winOpt.win
         }
         else {
-          throw new Error(`${constructClass.name}'s parameter [${index}] is not injectable`)
+          throw new Error(`${constructClass.name}'s parameter [${index}] is not injectable or is a circular dependency`)
         }
       })
     }
