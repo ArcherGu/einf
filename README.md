@@ -79,7 +79,7 @@ Provide at least one controller to start the application, `app.controller.ts`:
 import type { BrowserWindow } from 'electron'
 import { app } from 'electron'
 import { Controller, Inject, IpcHandle, IpcSend, Window } from 'einf'
-import type { AppService } from './app.service'
+import { AppService } from './app.service'
 
 @Controller()
 export class AppController {
