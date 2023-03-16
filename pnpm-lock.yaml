@@ -12,7 +12,7 @@ specifiers:
   simple-git-hooks: 2.8.1
   tsup: 6.6.3
   typescript: 4.9.5
-  vite: 4.1.4
+  vite: 4.2.0
   vite-plugin-doubleshot: 0.0.9
   vitest: 0.29.3
 
@@ -30,8 +30,8 @@ devDependencies:
   simple-git-hooks: 2.8.1
   tsup: 6.6.3_typescript@4.9.5
   typescript: 4.9.5
-  vite: 4.1.4_@types+node@18.15.3
-  vite-plugin-doubleshot: 0.0.9_5tjdsqmuag4kof5s44kyncso7m
+  vite: 4.2.0_@types+node@18.15.3
+  vite-plugin-doubleshot: 0.0.9_zdz64kmatofziqgw6wwtffxkge
   vitest: 0.29.3
 
 packages:
@@ -3724,6 +3724,14 @@ packages:
       fsevents: 2.3.2
     dev: true
 
+  /rollup/3.19.1:
+    resolution: {integrity: sha512-lAbrdN7neYCg/8WaoWn/ckzCtz+jr70GFfYdlf50OF7387HTg+wiuiqJRFYawwSPpqfqDNYqK7smY/ks2iAudg==}
+    engines: {node: '>=14.18.0', npm: '>=8.0.0'}
+    hasBin: true
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: true
+
   /run-parallel/1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
     dependencies:
@@ -4285,7 +4293,7 @@ packages:
       mlly: 1.1.0
       pathe: 1.1.0
       picocolors: 1.0.0
-      vite: 4.1.4_@types+node@18.15.3
+      vite: 4.2.0_@types+node@18.15.3
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -4296,14 +4304,14 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-doubleshot/0.0.9_5tjdsqmuag4kof5s44kyncso7m:
+  /vite-plugin-doubleshot/0.0.9_zdz64kmatofziqgw6wwtffxkge:
     resolution: {integrity: sha512-2c4m1z6vqj4+OB7qu/yr68S8LIjRb4pm/x2cNZ9+JWkGGh2lAY2ge+VoQ1fRSJUxK05e6GS9UW7o7AyoU7vinw==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
       '@doubleshot/builder': 0.0.8_6asscft3ymasabe5xxrstnhy6q
-      vite: 4.1.4_@types+node@18.15.3
+      vite: 4.2.0_@types+node@18.15.3
     transitivePeerDependencies:
       - debug
       - electron
@@ -4314,8 +4322,8 @@ packages:
       - typescript
     dev: true
 
-  /vite/4.1.4_@types+node@18.15.3:
-    resolution: {integrity: sha512-3knk/HsbSTKEin43zHu7jTwYWv81f8kgAL99G5NWBcA1LKvtvcVAC4JjBH1arBunO9kQka+1oGbrMKOjk4ZrBg==}
+  /vite/4.2.0_@types+node@18.15.3:
+    resolution: {integrity: sha512-AbDTyzzwuKoRtMIRLGNxhLRuv1FpRgdIw+1y6AQG73Q5+vtecmvzKo/yk8X/vrHDpETRTx01ABijqUHIzBXi0g==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -4340,10 +4348,10 @@ packages:
         optional: true
     dependencies:
       '@types/node': 18.15.3
-      esbuild: 0.16.17
+      esbuild: 0.17.6
       postcss: 8.4.21
       resolve: 1.22.1
-      rollup: 3.12.1
+      rollup: 3.19.1
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
@@ -4391,7 +4399,7 @@ packages:
       tinybench: 2.3.1
       tinypool: 0.3.1
       tinyspy: 1.0.2
-      vite: 4.1.4_@types+node@18.15.3
+      vite: 4.2.0_@types+node@18.15.3
       vite-node: 0.29.3_@types+node@18.15.3
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
