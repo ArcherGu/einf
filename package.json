@@ -44,7 +44,7 @@
     "execa": "7.1.1",
     "lint-staged": "13.2.0",
     "simple-git-hooks": "2.8.1",
-    "tsup": "6.6.3",
+    "tsup": "6.7.0",
     "typescript": "5.0.2",
     "vite": "4.2.0",
     "vite-plugin-doubleshot": "0.0.9",
