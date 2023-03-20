@@ -12,7 +12,7 @@ specifiers:
   simple-git-hooks: 2.8.1
   tsup: 6.7.0
   typescript: 5.0.2
-  vite: 4.2.0
+  vite: 4.2.1
   vite-plugin-doubleshot: 0.0.9
   vitest: 0.29.3
 
@@ -30,8 +30,8 @@ devDependencies:
   simple-git-hooks: 2.8.1
   tsup: 6.7.0_typescript@5.0.2
   typescript: 5.0.2
-  vite: 4.2.0_@types+node@18.15.3
-  vite-plugin-doubleshot: 0.0.9_3r2kfudisrx2yrrx4gqf3izxlu
+  vite: 4.2.1_@types+node@18.15.3
+  vite-plugin-doubleshot: 0.0.9_6g24h4oez7ivciajeguvffau64
   vitest: 0.29.3
 
 packages:
@@ -4285,7 +4285,7 @@ packages:
       mlly: 1.1.0
       pathe: 1.1.0
       picocolors: 1.0.0
-      vite: 4.2.0_@types+node@18.15.3
+      vite: 4.2.1_@types+node@18.15.3
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -4296,14 +4296,14 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-doubleshot/0.0.9_3r2kfudisrx2yrrx4gqf3izxlu:
+  /vite-plugin-doubleshot/0.0.9_6g24h4oez7ivciajeguvffau64:
     resolution: {integrity: sha512-2c4m1z6vqj4+OB7qu/yr68S8LIjRb4pm/x2cNZ9+JWkGGh2lAY2ge+VoQ1fRSJUxK05e6GS9UW7o7AyoU7vinw==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
       '@doubleshot/builder': 0.0.8_losqi3has25u66hrx4rfdxrupe
-      vite: 4.2.0_@types+node@18.15.3
+      vite: 4.2.1_@types+node@18.15.3
     transitivePeerDependencies:
       - debug
       - electron
@@ -4314,8 +4314,8 @@ packages:
       - typescript
     dev: true
 
-  /vite/4.2.0_@types+node@18.15.3:
-    resolution: {integrity: sha512-AbDTyzzwuKoRtMIRLGNxhLRuv1FpRgdIw+1y6AQG73Q5+vtecmvzKo/yk8X/vrHDpETRTx01ABijqUHIzBXi0g==}
+  /vite/4.2.1_@types+node@18.15.3:
+    resolution: {integrity: sha512-7MKhqdy0ISo4wnvwtqZkjke6XN4taqQ2TBaTccLIpOKv7Vp2h4Y+NpmWCnGDeSvvn45KxvWgGyb0MkHvY1vgbg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -4391,7 +4391,7 @@ packages:
       tinybench: 2.3.1
       tinypool: 0.3.1
       tinyspy: 1.0.2
-      vite: 4.2.0_@types+node@18.15.3
+      vite: 4.2.1_@types+node@18.15.3
       vite-node: 0.29.3_@types+node@18.15.3
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
