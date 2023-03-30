@@ -45,7 +45,7 @@
     "lint-staged": "13.2.0",
     "simple-git-hooks": "2.8.1",
     "tsup": "6.7.0",
-    "typescript": "5.0.2",
+    "typescript": "5.0.3",
     "vite": "4.2.1",
     "vite-plugin-doubleshot": "0.0.9",
     "vitest": "0.29.8"
