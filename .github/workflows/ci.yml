@@ -64,18 +64,19 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18.x
-      - name: Cache ~/.pnpm-store
+      - name: Cache pnpm store
         uses: actions/cache@v3
         env:
           cache-name: cache-pnpm-store
         with:
-          path: ~/.pnpm-store
+          path: ${{ github.workspace }}/.pnpm-store
           key: ${{ runner.os }}-${{ matrix.node-version }}-release-${{ env.cache-name }}-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-${{ matrix.node-version }}-release-${{ env.cache-name }}-
             ${{ runner.os }}-${{ matrix.node-version }}-release-
             ${{ runner.os }}-
       - run: npm i -g pnpm
+      - run: pnpm config set store-dir .pnpm-store
       - run: pnpm i
       - run: pnpx semantic-release --branches main
         env:
