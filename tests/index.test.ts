@@ -4,7 +4,7 @@ import { execa } from 'execa'
 
 const mockDir = path.resolve(__dirname, './mock')
 
-const run = async () => {
+async function run() {
   const { stdout, stderr } = await execa(
     'npx',
     ['vite'],

@@ -1,4 +1,4 @@
-import { join } from 'path'
+import { join } from 'node:path'
 import { BrowserWindow, app } from 'electron'
 import { createEinf } from '../../../dist'
 import { AppController } from './app.controller'

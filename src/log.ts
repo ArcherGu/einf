@@ -3,7 +3,7 @@ import * as colors from 'colorette'
 
 type LOG_TYPE = 'info' | 'success' | 'error' | 'warn'
 
-export const colorize = (type: LOG_TYPE, data: any) => {
+export function colorize(type: LOG_TYPE, data: any) {
   const color
     = type === 'info'
       ? 'blue'
@@ -15,13 +15,13 @@ export const colorize = (type: LOG_TYPE, data: any) => {
   return colors[color](data)
 }
 
-export const makeLabel = (name: string, type?: LOG_TYPE) => {
+export function makeLabel(name: string, type?: LOG_TYPE) {
   return `${colors.dim('[')}${type ? colorize(type, name) : name}${colors.dim(']')}`
 }
 
 export type Logger = ReturnType<typeof createLogger>
 
-export const createLogger = (name = 'Einf') => {
+export function createLogger(name = 'Einf') {
   return {
     success(...args: any[]) {
       return this.print('success', ...args)
