@@ -40,7 +40,7 @@
     "@lightwing/eslint-config": "0.0.14",
     "@types/node": "18.15.13",
     "electron": "24.1.2",
-    "eslint": "8.38.0",
+    "eslint": "8.39.0",
     "execa": "7.1.1",
     "lint-staged": "13.2.1",
     "simple-git-hooks": "2.8.1",
