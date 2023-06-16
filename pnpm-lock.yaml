@@ -36,7 +36,7 @@ devDependencies:
     version: 2.8.1
   tsup:
     specifier: 7.0.0
-    version: 7.0.0(typescript@5.1.3)
+    version: 7.0.0(@swc/core@1.3.62)(typescript@5.1.3)
   typescript:
     specifier: 5.1.3
     version: 5.1.3
@@ -44,8 +44,8 @@ devDependencies:
     specifier: 4.3.9
     version: 4.3.9(@types/node@18.16.18)
   vite-plugin-doubleshot:
-    specifier: 0.0.11
-    version: 0.0.11(electron@25.1.1)(typescript@5.1.3)(vite@4.3.9)
+    specifier: 0.0.12
+    version: 0.0.12(electron@25.1.1)(typescript@5.1.3)(vite@4.3.9)
   vitest:
     specifier: 0.32.0
     version: 0.32.0
@@ -169,8 +169,8 @@ packages:
       js-tokens: 4.0.0
     dev: true
 
-  /@doubleshot/builder@0.0.10(electron@25.1.1)(typescript@5.1.3):
-    resolution: {integrity: sha512-wOvHzl847TZIJVDjlfrOO3iFk8GSPLU0tPZfgjffrA1vXcx0sPLuCpujoTULyR82V5PNpIuQDiWLixzc6z0Fxg==}
+  /@doubleshot/builder@0.0.11(electron@25.1.1)(typescript@5.1.3):
+    resolution: {integrity: sha512-dlPnJ2SMxNhwdnijTVaISBQMT4zzM7pVUZivRqoFVGC68omcoceQQWOV14D5bicOCMZtjJ1HEg7y5hDql3/Ohw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     peerDependencies:
@@ -191,7 +191,7 @@ packages:
       esbuild: 0.18.3
       joycon: 3.1.1
       resolve-from: 5.0.0
-      tsup: 6.7.0(@swc/core@1.3.62)(typescript@5.1.3)
+      tsup: 7.0.0(@swc/core@1.3.62)(typescript@5.1.3)
       wait-on: 7.0.1
     transitivePeerDependencies:
       - '@swc/helpers'
@@ -1362,16 +1362,6 @@ packages:
     resolution: {integrity: sha512-qwVpFEHNfhYJIzNRBvd2C1kyo6jz3ZSMPyyuR47OPdiKWlbYnZNyDWuyR175qDnAJLiCo5fBBqPb3RiXgWlkOQ==}
     dependencies:
       semver: 7.5.1
-    dev: true
-
-  /bundle-require@4.0.1(esbuild@0.17.6):
-    resolution: {integrity: sha512-9NQkRHlNdNpDBGmLpngF3EFDcwodhMUuLz9PaWYciVcQF9SE4LFjM2DB/xV1Li5JiuDMv7ZUWuC3rGbqR0MAXQ==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
-    peerDependencies:
-      esbuild: '>=0.17'
-    dependencies:
-      esbuild: 0.17.6
-      load-tsconfig: 0.2.3
     dev: true
 
   /bundle-require@4.0.1(esbuild@0.18.3):
@@ -3566,22 +3556,6 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /postcss-load-config@3.1.4:
-    resolution: {integrity: sha512-6DiM4E7v4coTE4uzA8U//WhtPwyhiim3eyjEMFCnUpzbrkK9wJHgKDT2mR+HbtSrd/NubVaYTOpSpjUl8NQeRg==}
-    engines: {node: '>= 10'}
-    peerDependencies:
-      postcss: '>=8.0.9'
-      ts-node: '>=9.0.0'
-    peerDependenciesMeta:
-      postcss:
-        optional: true
-      ts-node:
-        optional: true
-    dependencies:
-      lilconfig: 2.1.0
-      yaml: 1.10.2
-    dev: true
-
   /postcss-load-config@4.0.1:
     resolution: {integrity: sha512-vEJIc8RdiBRu3oRAI0ymerOn+7rPuMvRXslTvZUKZonDHFIczxztIyJ1urxM1x9JXEikvpWWTUUqal5j/8QgvA==}
     engines: {node: '>= 14'}
@@ -4159,44 +4133,7 @@ packages:
     resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
     dev: true
 
-  /tsup@6.7.0(@swc/core@1.3.62)(typescript@5.1.3):
-    resolution: {integrity: sha512-L3o8hGkaHnu5TdJns+mCqFsDBo83bJ44rlK7e6VdanIvpea4ArPcU3swWGsLVbXak1PqQx/V+SSmFPujBK+zEQ==}
-    engines: {node: '>=14.18'}
-    hasBin: true
-    peerDependencies:
-      '@swc/core': ^1
-      postcss: ^8.4.12
-      typescript: '>=4.1.0'
-    peerDependenciesMeta:
-      '@swc/core':
-        optional: true
-      postcss:
-        optional: true
-      typescript:
-        optional: true
-    dependencies:
-      '@swc/core': 1.3.62
-      bundle-require: 4.0.1(esbuild@0.17.6)
-      cac: 6.7.14
-      chokidar: 3.5.3
-      debug: 4.3.4
-      esbuild: 0.17.6
-      execa: 5.1.1
-      globby: 11.1.0
-      joycon: 3.1.1
-      postcss-load-config: 3.1.4
-      resolve-from: 5.0.0
-      rollup: 3.21.0
-      source-map: 0.8.0-beta.0
-      sucrase: 3.25.0
-      tree-kill: 1.2.2
-      typescript: 5.1.3
-    transitivePeerDependencies:
-      - supports-color
-      - ts-node
-    dev: true
-
-  /tsup@7.0.0(typescript@5.1.3):
+  /tsup@7.0.0(@swc/core@1.3.62)(typescript@5.1.3):
     resolution: {integrity: sha512-yYARDRkPq07mO3YUXTvF12ISwWQG57Odve8aFEgLdHyeGungxuKxb19yf9G0W8y59SZFkLnRj1gkoVk1gd5fbQ==}
     engines: {node: '>=16.14'}
     hasBin: true
@@ -4212,6 +4149,7 @@ packages:
       typescript:
         optional: true
     dependencies:
+      '@swc/core': 1.3.62
       bundle-require: 4.0.1(esbuild@0.18.3)
       cac: 6.7.14
       chokidar: 3.5.3
@@ -4356,13 +4294,13 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-doubleshot@0.0.11(electron@25.1.1)(typescript@5.1.3)(vite@4.3.9):
-    resolution: {integrity: sha512-VLGnm7k+dRUZ2X7J8O1BH9YSbNCzG+7VPFOQXsivkM5zzqpO5NEpA42MEXGZ9IjSx7yGm6BymWqU5kkpIwunNA==}
+  /vite-plugin-doubleshot@0.0.12(electron@25.1.1)(typescript@5.1.3)(vite@4.3.9):
+    resolution: {integrity: sha512-7PWlopliLKB+dcMao/f25AWMArYBB7+ZG7FRpljbTkGYOfv2v1PH/9DzXn3lE1Jl0OowbhRmeCEkAdOlwtFbVA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
-      '@doubleshot/builder': 0.0.10(electron@25.1.1)(typescript@5.1.3)
+      '@doubleshot/builder': 0.0.11(electron@25.1.1)(typescript@5.1.3)
       vite: 4.3.9(@types/node@18.16.18)
     transitivePeerDependencies:
       - '@swc/helpers'
@@ -4604,11 +4542,6 @@ packages:
       eslint-visitor-keys: 3.4.1
       lodash: 4.17.21
       yaml: 2.2.2
-    dev: true
-
-  /yaml@1.10.2:
-    resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
-    engines: {node: '>= 6'}
     dev: true
 
   /yaml@2.2.2:
