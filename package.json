@@ -42,7 +42,7 @@
     "electron": "25.2.0",
     "eslint": "8.43.0",
     "execa": "7.1.1",
-    "lint-staged": "13.2.2",
+    "lint-staged": "13.2.3",
     "simple-git-hooks": "2.8.1",
     "tsup": "7.1.0",
     "typescript": "5.1.5",
