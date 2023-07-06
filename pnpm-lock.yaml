@@ -41,11 +41,11 @@ devDependencies:
     specifier: 5.1.6
     version: 5.1.6
   vite:
-    specifier: 4.4.0
-    version: 4.4.0(@types/node@18.16.19)
+    specifier: 4.4.1
+    version: 4.4.1(@types/node@18.16.19)
   vite-plugin-doubleshot:
     specifier: 0.0.12
-    version: 0.0.12(electron@25.2.0)(typescript@5.1.6)(vite@4.4.0)
+    version: 0.0.12(electron@25.2.0)(typescript@5.1.6)(vite@4.4.1)
   vitest:
     specifier: 0.32.4
     version: 0.32.4
@@ -188,12 +188,12 @@ packages:
         optional: true
     dependencies:
       '@swc/core': 1.3.62
-      bundle-require: 4.0.1(esbuild@0.18.3)
+      bundle-require: 4.0.1(esbuild@0.18.11)
       cac: 6.7.14
       check-package-exists: 1.1.3
       colorette: 2.0.20
       electron: 25.2.0
-      esbuild: 0.18.3
+      esbuild: 0.18.11
       joycon: 3.1.1
       resolve-from: 5.0.0
       tsup: 7.1.0(@swc/core@1.3.62)(typescript@5.1.6)
@@ -1373,6 +1373,16 @@ packages:
     resolution: {integrity: sha512-qwVpFEHNfhYJIzNRBvd2C1kyo6jz3ZSMPyyuR47OPdiKWlbYnZNyDWuyR175qDnAJLiCo5fBBqPb3RiXgWlkOQ==}
     dependencies:
       semver: 7.5.1
+    dev: true
+
+  /bundle-require@4.0.1(esbuild@0.18.11):
+    resolution: {integrity: sha512-9NQkRHlNdNpDBGmLpngF3EFDcwodhMUuLz9PaWYciVcQF9SE4LFjM2DB/xV1Li5JiuDMv7ZUWuC3rGbqR0MAXQ==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    peerDependencies:
+      esbuild: '>=0.17'
+    dependencies:
+      esbuild: 0.18.11
+      load-tsconfig: 0.2.3
     dev: true
 
   /bundle-require@4.0.1(esbuild@0.18.3):
@@ -4266,7 +4276,7 @@ packages:
       mlly: 1.4.0
       pathe: 1.1.1
       picocolors: 1.0.0
-      vite: 4.4.0(@types/node@18.16.19)
+      vite: 4.4.1(@types/node@18.16.19)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -4278,14 +4288,14 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-doubleshot@0.0.12(electron@25.2.0)(typescript@5.1.6)(vite@4.4.0):
+  /vite-plugin-doubleshot@0.0.12(electron@25.2.0)(typescript@5.1.6)(vite@4.4.1):
     resolution: {integrity: sha512-7PWlopliLKB+dcMao/f25AWMArYBB7+ZG7FRpljbTkGYOfv2v1PH/9DzXn3lE1Jl0OowbhRmeCEkAdOlwtFbVA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
       '@doubleshot/builder': 0.0.11(electron@25.2.0)(typescript@5.1.6)
-      vite: 4.4.0(@types/node@18.16.19)
+      vite: 4.4.1(@types/node@18.16.19)
     transitivePeerDependencies:
       - '@swc/helpers'
       - debug
@@ -4297,8 +4307,8 @@ packages:
       - typescript
     dev: true
 
-  /vite@4.4.0(@types/node@18.16.19):
-    resolution: {integrity: sha512-Wf+DCEjuM8aGavEYiF77hnbxEZ+0+/jC9nABR46sh5Xi+GYeSvkeEFRiVuI3x+tPjxgZeS91h1jTAQTPFgePpA==}
+  /vite@4.4.1(@types/node@18.16.19):
+    resolution: {integrity: sha512-8mmwPlsy7t+ZcTme7vdbVGuZ3Tri+lrLXr6hsF5UHdyYyARPPPMtM16QlqC9TZuCd5j3NmWs1rwka3cVSRHZTw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -4385,7 +4395,7 @@ packages:
       strip-literal: 1.0.1
       tinybench: 2.5.0
       tinypool: 0.5.0
-      vite: 4.4.0(@types/node@18.16.19)
+      vite: 4.4.1(@types/node@18.16.19)
       vite-node: 0.32.4(@types/node@18.16.19)
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
