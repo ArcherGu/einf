@@ -41,11 +41,11 @@ devDependencies:
     specifier: 5.1.6
     version: 5.1.6
   vite:
-    specifier: 4.4.1
-    version: 4.4.1(@types/node@18.16.19)
+    specifier: 4.4.2
+    version: 4.4.2(@types/node@18.16.19)
   vite-plugin-doubleshot:
     specifier: 0.0.12
-    version: 0.0.12(electron@25.2.0)(typescript@5.1.6)(vite@4.4.1)
+    version: 0.0.12(electron@25.2.0)(typescript@5.1.6)(vite@4.4.2)
   vitest:
     specifier: 0.33.0
     version: 0.33.0
@@ -4276,7 +4276,7 @@ packages:
       mlly: 1.4.0
       pathe: 1.1.1
       picocolors: 1.0.0
-      vite: 4.4.1(@types/node@18.16.19)
+      vite: 4.4.2(@types/node@18.16.19)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -4288,14 +4288,14 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-doubleshot@0.0.12(electron@25.2.0)(typescript@5.1.6)(vite@4.4.1):
+  /vite-plugin-doubleshot@0.0.12(electron@25.2.0)(typescript@5.1.6)(vite@4.4.2):
     resolution: {integrity: sha512-7PWlopliLKB+dcMao/f25AWMArYBB7+ZG7FRpljbTkGYOfv2v1PH/9DzXn3lE1Jl0OowbhRmeCEkAdOlwtFbVA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
       '@doubleshot/builder': 0.0.11(electron@25.2.0)(typescript@5.1.6)
-      vite: 4.4.1(@types/node@18.16.19)
+      vite: 4.4.2(@types/node@18.16.19)
     transitivePeerDependencies:
       - '@swc/helpers'
       - debug
@@ -4307,8 +4307,8 @@ packages:
       - typescript
     dev: true
 
-  /vite@4.4.1(@types/node@18.16.19):
-    resolution: {integrity: sha512-8mmwPlsy7t+ZcTme7vdbVGuZ3Tri+lrLXr6hsF5UHdyYyARPPPMtM16QlqC9TZuCd5j3NmWs1rwka3cVSRHZTw==}
+  /vite@4.4.2(@types/node@18.16.19):
+    resolution: {integrity: sha512-zUcsJN+UvdSyHhYa277UHhiJ3iq4hUBwHavOpsNUGsTgjBeoBlK8eDt+iT09pBq0h9/knhG/SPrZiM7cGmg7NA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -4395,7 +4395,7 @@ packages:
       strip-literal: 1.0.1
       tinybench: 2.5.0
       tinypool: 0.6.0
-      vite: 4.4.1(@types/node@18.16.19)
+      vite: 4.4.2(@types/node@18.16.19)
       vite-node: 0.33.0(@types/node@18.16.19)
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
