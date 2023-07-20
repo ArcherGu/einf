@@ -20,8 +20,8 @@ devDependencies:
     specifier: 18.16.19
     version: 18.16.19
   electron:
-    specifier: 25.3.0
-    version: 25.3.0
+    specifier: 25.3.1
+    version: 25.3.1
   eslint:
     specifier: 8.45.0
     version: 8.45.0
@@ -45,7 +45,7 @@ devDependencies:
     version: 4.4.4(@types/node@18.16.19)
   vite-plugin-doubleshot:
     specifier: 0.0.12
-    version: 0.0.12(electron@25.3.0)(typescript@5.1.6)(vite@4.4.4)
+    version: 0.0.12(electron@25.3.1)(typescript@5.1.6)(vite@4.4.4)
   vitest:
     specifier: 0.33.0
     version: 0.33.0
@@ -174,7 +174,7 @@ packages:
       js-tokens: 4.0.0
     dev: true
 
-  /@doubleshot/builder@0.0.11(electron@25.3.0)(typescript@5.1.6):
+  /@doubleshot/builder@0.0.11(electron@25.3.1)(typescript@5.1.6):
     resolution: {integrity: sha512-dlPnJ2SMxNhwdnijTVaISBQMT4zzM7pVUZivRqoFVGC68omcoceQQWOV14D5bicOCMZtjJ1HEg7y5hDql3/Ohw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -192,7 +192,7 @@ packages:
       cac: 6.7.14
       check-package-exists: 1.1.3
       colorette: 2.0.20
-      electron: 25.3.0
+      electron: 25.3.1
       esbuild: 0.18.11
       joycon: 3.1.1
       resolve-from: 5.0.0
@@ -1024,7 +1024,7 @@ packages:
       ignore: 5.2.4
       natural-compare: 1.4.0
       natural-compare-lite: 1.4.0
-      semver: 7.5.1
+      semver: 7.5.4
       ts-api-utils: 1.0.1(typescript@5.1.6)
       typescript: 5.1.6
     transitivePeerDependencies:
@@ -1112,7 +1112,7 @@ packages:
       debug: 4.3.4
       globby: 11.1.0
       is-glob: 4.0.3
-      semver: 7.5.1
+      semver: 7.5.4
       tsutils: 3.21.0(typescript@5.1.6)
       typescript: 5.1.6
     transitivePeerDependencies:
@@ -1133,7 +1133,7 @@ packages:
       debug: 4.3.4
       globby: 11.1.0
       is-glob: 4.0.3
-      semver: 7.5.1
+      semver: 7.5.4
       ts-api-utils: 1.0.1(typescript@5.1.6)
       typescript: 5.1.6
     transitivePeerDependencies:
@@ -1154,7 +1154,7 @@ packages:
       '@typescript-eslint/typescript-estree': 5.59.7(typescript@5.1.6)
       eslint: 8.45.0
       eslint-scope: 5.1.1
-      semver: 7.5.1
+      semver: 7.5.4
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -1174,7 +1174,7 @@ packages:
       '@typescript-eslint/typescript-estree': 6.0.0(typescript@5.1.6)
       eslint: 8.45.0
       eslint-scope: 5.1.1
-      semver: 7.5.1
+      semver: 7.5.4
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -1757,8 +1757,8 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: true
 
-  /electron@25.3.0:
-    resolution: {integrity: sha512-cyqotxN+AroP5h2IxUsJsmehYwP5LrFAOO7O7k9tILME3Sa1/POAg3shrhx4XEnaAMyMqMLxzGvkzCVxzEErnA==}
+  /electron@25.3.1:
+    resolution: {integrity: sha512-t0QXXqgf0/P0OJ9LU3qpcBMK+wL0FRwTQfooBaaG08v5hywPzc1yplfb3l4tS1xC0Ttw8IBaKLBeEoRgxBRHjg==}
     engines: {node: '>= 12.20.55'}
     hasBin: true
     requiresBuild: true
@@ -2101,7 +2101,7 @@ packages:
       natural-compare: 1.4.0
       nth-check: 2.1.1
       postcss-selector-parser: 6.0.10
-      semver: 7.5.1
+      semver: 7.5.4
       vue-eslint-parser: 9.3.0(eslint@8.45.0)
       xml-name-validator: 4.0.0
     transitivePeerDependencies:
@@ -2474,7 +2474,7 @@ packages:
       es6-error: 4.1.1
       matcher: 3.0.0
       roarr: 2.15.4
-      semver: 7.5.1
+      semver: 7.5.4
       serialize-error: 7.0.1
     dev: true
     optional: true
@@ -2805,7 +2805,7 @@ packages:
       acorn: 8.9.0
       eslint-visitor-keys: 3.4.1
       espree: 9.6.0
-      semver: 7.5.1
+      semver: 7.5.4
     dev: true
 
   /jsonc-parser@3.2.0:
@@ -3571,14 +3571,6 @@ packages:
     hasBin: true
     dev: true
 
-  /semver@7.5.1:
-    resolution: {integrity: sha512-Wvss5ivl8TMRZXXESstBA4uR5iXgEN/VC5/sOcuXdVLzcdkz4HWetIoRfG5gb5X+ij/G9rw9YoGn3QoQ8OCSpw==}
-    engines: {node: '>=10'}
-    hasBin: true
-    dependencies:
-      lru-cache: 6.0.0
-    dev: true
-
   /semver@7.5.4:
     resolution: {integrity: sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==}
     engines: {node: '>=10'}
@@ -4024,13 +4016,13 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-doubleshot@0.0.12(electron@25.3.0)(typescript@5.1.6)(vite@4.4.4):
+  /vite-plugin-doubleshot@0.0.12(electron@25.3.1)(typescript@5.1.6)(vite@4.4.4):
     resolution: {integrity: sha512-7PWlopliLKB+dcMao/f25AWMArYBB7+ZG7FRpljbTkGYOfv2v1PH/9DzXn3lE1Jl0OowbhRmeCEkAdOlwtFbVA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
-      '@doubleshot/builder': 0.0.11(electron@25.3.0)(typescript@5.1.6)
+      '@doubleshot/builder': 0.0.11(electron@25.3.1)(typescript@5.1.6)
       vite: 4.4.4(@types/node@18.16.19)
     transitivePeerDependencies:
       - '@swc/helpers'
@@ -4157,7 +4149,7 @@ packages:
       espree: 9.6.0
       esquery: 1.5.0
       lodash: 4.17.21
-      semver: 7.5.1
+      semver: 7.5.4
     transitivePeerDependencies:
       - supports-color
     dev: true
