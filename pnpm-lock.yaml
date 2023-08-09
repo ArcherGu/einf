@@ -20,8 +20,8 @@ devDependencies:
     specifier: 18.17.4
     version: 18.17.4
   electron:
-    specifier: 25.4.0
-    version: 25.4.0
+    specifier: 25.5.0
+    version: 25.5.0
   eslint:
     specifier: 8.46.0
     version: 8.46.0
@@ -45,7 +45,7 @@ devDependencies:
     version: 4.4.9(@types/node@18.17.4)
   vite-plugin-doubleshot:
     specifier: 0.0.12
-    version: 0.0.12(electron@25.4.0)(typescript@5.1.6)(vite@4.4.9)
+    version: 0.0.12(electron@25.5.0)(typescript@5.1.6)(vite@4.4.9)
   vitest:
     specifier: 0.34.1
     version: 0.34.1
@@ -174,7 +174,7 @@ packages:
       js-tokens: 4.0.0
     dev: true
 
-  /@doubleshot/builder@0.0.11(electron@25.4.0)(typescript@5.1.6):
+  /@doubleshot/builder@0.0.11(electron@25.5.0)(typescript@5.1.6):
     resolution: {integrity: sha512-dlPnJ2SMxNhwdnijTVaISBQMT4zzM7pVUZivRqoFVGC68omcoceQQWOV14D5bicOCMZtjJ1HEg7y5hDql3/Ohw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -192,7 +192,7 @@ packages:
       cac: 6.7.14
       check-package-exists: 1.1.3
       colorette: 2.0.20
-      electron: 25.4.0
+      electron: 25.5.0
       esbuild: 0.18.11
       joycon: 3.1.1
       resolve-from: 5.0.0
@@ -1557,8 +1557,8 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: true
 
-  /electron@25.4.0:
-    resolution: {integrity: sha512-VLTRxDhL4UvQbqM7pTNENnJo62cdAPZT92N+B7BZQ5Xfok1wuVPEewIjBot4K7U3EpLUuHn1veeLzho3ihiP+Q==}
+  /electron@25.5.0:
+    resolution: {integrity: sha512-w1DNj1LuAk0Vaas1rQ0pAkTe2gZ5YG75J27mC2m88y0G6Do5b5YoFDaF84fOGQHeQ4j8tC5LngSgWhbwmqDlrw==}
     engines: {node: '>= 12.20.55'}
     hasBin: true
     requiresBuild: true
@@ -3818,13 +3818,13 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-doubleshot@0.0.12(electron@25.4.0)(typescript@5.1.6)(vite@4.4.9):
+  /vite-plugin-doubleshot@0.0.12(electron@25.5.0)(typescript@5.1.6)(vite@4.4.9):
     resolution: {integrity: sha512-7PWlopliLKB+dcMao/f25AWMArYBB7+ZG7FRpljbTkGYOfv2v1PH/9DzXn3lE1Jl0OowbhRmeCEkAdOlwtFbVA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
-      '@doubleshot/builder': 0.0.11(electron@25.4.0)(typescript@5.1.6)
+      '@doubleshot/builder': 0.0.11(electron@25.5.0)(typescript@5.1.6)
       vite: 4.4.9(@types/node@18.17.4)
     transitivePeerDependencies:
       - '@swc/helpers'
