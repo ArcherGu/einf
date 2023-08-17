@@ -48,7 +48,7 @@
     "typescript": "5.1.6",
     "vite": "4.4.9",
     "vite-plugin-doubleshot": "0.0.12",
-    "vitest": "0.34.1"
+    "vitest": "0.34.2"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
