@@ -17,8 +17,8 @@ devDependencies:
     specifier: 0.0.20
     version: 0.0.20(eslint@8.47.0)(typescript@5.2.2)
   '@types/node':
-    specifier: 18.17.9
-    version: 18.17.9
+    specifier: 18.17.11
+    version: 18.17.11
   electron:
     specifier: 26.1.0
     version: 26.1.0
@@ -42,7 +42,7 @@ devDependencies:
     version: 5.2.2
   vite:
     specifier: 4.4.9
-    version: 4.4.9(@types/node@18.17.9)
+    version: 4.4.9(@types/node@18.17.11)
   vite-plugin-doubleshot:
     specifier: 0.0.12
     version: 0.0.12(electron@26.1.0)(typescript@5.2.2)(vite@4.4.9)
@@ -738,7 +738,7 @@ packages:
     dependencies:
       '@types/http-cache-semantics': 4.0.1
       '@types/keyv': 3.1.4
-      '@types/node': 18.17.9
+      '@types/node': 18.17.11
       '@types/responselike': 1.0.0
     dev: true
 
@@ -763,7 +763,7 @@ packages:
   /@types/keyv@3.1.4:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
-      '@types/node': 18.17.9
+      '@types/node': 18.17.11
     dev: true
 
   /@types/mdast@3.0.10:
@@ -772,8 +772,8 @@ packages:
       '@types/unist': 2.0.6
     dev: true
 
-  /@types/node@18.17.9:
-    resolution: {integrity: sha512-fxaKquqYcPOGwE7tC1anJaPJ0GHyOVzfA2oUoXECjBjrtsIz4YJvtNYsq8LUcjEUehEF+jGpx8Z+lFrtT6z0tg==}
+  /@types/node@18.17.11:
+    resolution: {integrity: sha512-r3hjHPBu+3LzbGBa8DHnr/KAeTEEOrahkcL+cZc4MaBMTM+mk8LtXR+zw+nqfjuDZZzYTYgTcpHuP+BEQk069g==}
     dev: true
 
   /@types/normalize-package-data@2.4.1:
@@ -783,7 +783,7 @@ packages:
   /@types/responselike@1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 18.17.9
+      '@types/node': 18.17.11
     dev: true
 
   /@types/semver@7.5.0:
@@ -798,7 +798,7 @@ packages:
     resolution: {integrity: sha512-Cn6WYCm0tXv8p6k+A8PvbDG763EDpBoTzHdA+Q/MF6H3sapGjCm9NzoaJncJS9tUKSuCoDs9XHxYYsQDgxR6kw==}
     requiresBuild: true
     dependencies:
-      '@types/node': 18.17.9
+      '@types/node': 18.17.11
     dev: true
     optional: true
 
@@ -1531,7 +1531,7 @@ packages:
     requiresBuild: true
     dependencies:
       '@electron/get': 2.0.2
-      '@types/node': 18.17.9
+      '@types/node': 18.17.11
       extract-zip: 2.0.1
     transitivePeerDependencies:
       - supports-color
@@ -3716,7 +3716,7 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-node@0.34.2(@types/node@18.17.9):
+  /vite-node@0.34.2(@types/node@18.17.11):
     resolution: {integrity: sha512-JtW249Zm3FB+F7pQfH56uWSdlltCo1IOkZW5oHBzeQo0iX4jtC7o1t9aILMGd9kVekXBP2lfJBEQt9rBh07ebA==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -3726,7 +3726,7 @@ packages:
       mlly: 1.4.0
       pathe: 1.1.1
       picocolors: 1.0.0
-      vite: 4.4.9(@types/node@18.17.9)
+      vite: 4.4.9(@types/node@18.17.11)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -3745,7 +3745,7 @@ packages:
       vite: '>=2.0.0'
     dependencies:
       '@doubleshot/builder': 0.0.11(electron@26.1.0)(typescript@5.2.2)
-      vite: 4.4.9(@types/node@18.17.9)
+      vite: 4.4.9(@types/node@18.17.11)
     transitivePeerDependencies:
       - '@swc/helpers'
       - debug
@@ -3757,7 +3757,7 @@ packages:
       - typescript
     dev: true
 
-  /vite@4.4.9(@types/node@18.17.9):
+  /vite@4.4.9(@types/node@18.17.11):
     resolution: {integrity: sha512-2mbUn2LlUmNASWwSCNSJ/EG2HuSRTnVNaydp6vMCm5VIqJsjMfbIWtbH2kDuwUVW5mMUKKZvGPX/rqeqVvv1XA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -3785,7 +3785,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.17.9
+      '@types/node': 18.17.11
       esbuild: 0.18.11
       postcss: 8.4.27
       rollup: 3.27.2
@@ -3826,7 +3826,7 @@ packages:
     dependencies:
       '@types/chai': 4.3.5
       '@types/chai-subset': 1.3.3
-      '@types/node': 18.17.9
+      '@types/node': 18.17.11
       '@vitest/expect': 0.34.2
       '@vitest/runner': 0.34.2
       '@vitest/snapshot': 0.34.2
@@ -3845,8 +3845,8 @@ packages:
       strip-literal: 1.0.1
       tinybench: 2.5.0
       tinypool: 0.7.0
-      vite: 4.4.9(@types/node@18.17.9)
-      vite-node: 0.34.2(@types/node@18.17.9)
+      vite: 4.4.9(@types/node@18.17.11)
+      vite-node: 0.34.2(@types/node@18.17.11)
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less
