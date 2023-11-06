@@ -1,5 +1,5 @@
 import path from 'node:path'
-import { beforeAll, describe, expect, test } from 'vitest'
+import { beforeAll, describe, expect, it } from 'vitest'
 import { execa } from 'execa'
 
 const mockDir = path.resolve(__dirname, './mock')
@@ -17,42 +17,42 @@ async function run() {
   return logs
 }
 
-describe('Einf Test', () => {
+describe('einf Test', () => {
   let logs = ''
   beforeAll(async () => {
     logs = await run()
   }, 60 * 1000)
 
-  test('IpcOn', () => {
+  it('ipcOn', () => {
     expect(logs).toContain('Call ipc on')
   })
 
-  test('IpcSend', () => {
+  it('ipcSend', () => {
     expect(logs).toContain('hello, this is the main process')
   })
 
-  test('IpcHandle', () => {
+  it('ipcHandle', () => {
     expect(logs).toContain('hello, this is the renderer')
     expect(logs).toContain('main process received your message')
   })
 
-  test('Service injection', () => {
+  it('service injection', () => {
     expect(logs).toContain('is created by app service')
   })
 
-  test('Another service inject to app service', () => {
+  it('another service inject to app service', () => {
     expect(logs).toContain('is created by another service')
   })
 
-  test('Custom item injection', () => {
+  it('custom item injection', () => {
     expect(logs).toContain('current is run in development mode')
   })
 
-  test('Window', () => {
+  it('window', () => {
     expect(logs).toContain('Get window title: Einf Test')
   })
 
-  test('Error', () => {
+  it('error', () => {
     expect(logs).toContain('This is an error from ipc channel')
   })
 })
