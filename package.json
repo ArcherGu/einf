@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "colorette": "^2.0.20",
-    "reflect-metadata": "^0.1.13"
+    "reflect-metadata": "^0.2.0"
   },
   "devDependencies": {
     "@lightwing/eslint-config": "1.0.19",
