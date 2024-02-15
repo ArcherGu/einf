@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "@lightwing/eslint-config": "1.0.25",
-    "@types/node": "20.11.18",
+    "@types/node": "20.11.19",
     "electron": "28.2.3",
     "eslint": "8.56.0",
     "execa": "8.0.1",
