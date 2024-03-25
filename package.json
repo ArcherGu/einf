@@ -43,7 +43,7 @@
     "eslint": "8.57.0",
     "execa": "8.0.1",
     "lint-staged": "15.2.2",
-    "simple-git-hooks": "2.11.0",
+    "simple-git-hooks": "2.11.1",
     "tsup": "8.0.2",
     "typescript": "5.4.3",
     "vite": "5.2.6",
