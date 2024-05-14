@@ -46,8 +46,8 @@ importers:
         specifier: 5.2.11
         version: 5.2.11(@types/node@20.12.12)
       vite-plugin-doubleshot:
-        specifier: 0.0.13
-        version: 0.0.13(electron@30.0.4)(postcss@8.4.38)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.12))
+        specifier: 0.0.14
+        version: 0.0.14(electron@30.0.4)(postcss@8.4.38)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.12))
       vitest:
         specifier: 1.6.0
         version: 1.6.0(@types/node@20.12.12)
@@ -2986,8 +2986,8 @@ packages:
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
 
-  vite-plugin-doubleshot@0.0.13:
-    resolution: {integrity: sha512-AdeF/4fePxA5rHMGrc2Q2FDtihNcjnWD/YNZTmr2qF8380W9a+2fcDreCVPkTBiwhJcWPUM0nDmQ4ojQgSFggw==}
+  vite-plugin-doubleshot@0.0.14:
+    resolution: {integrity: sha512-7ldaBMuAaRqUOKFTFMle0GZJN333BFFYCJVxgnwvsJnpWUoQdN5TF+G7BtVFiX4x87vNFnkDN1qUbYCmHTs6xw==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
@@ -6177,7 +6177,7 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-doubleshot@0.0.13(electron@30.0.4)(postcss@8.4.38)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.12)):
+  vite-plugin-doubleshot@0.0.14(electron@30.0.4)(postcss@8.4.38)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.12)):
     dependencies:
       '@doubleshot/builder': 0.0.11(electron@30.0.4)(postcss@8.4.38)(typescript@5.4.5)
       vite: 5.2.11(@types/node@20.12.12)
