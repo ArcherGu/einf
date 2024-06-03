@@ -46,7 +46,7 @@ pnpm add einf
 
 ## Usage
 
-Entry point of your electron application like `index.ts`: 
+1. Entry point of your electron application like `index.ts`: 
 
 ```ts
 import { BrowserWindow, app } from 'electron'
@@ -73,7 +73,7 @@ async function bootstrap() {
 bootstrap()
 ```
 
-Provide at least one controller to start the application, `app.controller.ts`:
+2. Provide at least one controller to start the application, `app.controller.ts`:
 
 ```ts
 import type { BrowserWindow } from 'electron'
@@ -107,7 +107,7 @@ export class AppController {
 }
 ```
 
-You can also inject service via `@Injectable` decorator, `app.service.ts`:
+3. You can also inject service via `@Injectable` decorator, `app.service.ts`:
 
 ```ts
 import { Injectable } from 'einf'
@@ -116,6 +116,21 @@ import { Injectable } from 'einf'
 export class AppService {
   public createMsg(msg: string): string {
     return `"${msg}" is created by app service`
+  }
+}
+```
+
+4. Typescript configuration:
+
+Ensure that `experimentalDecorators` and `emitDecoratorMetadata` are enabled in your TypeScript configuration (such as in `tsconfig.json`).
+If not, you may encounter an error stating `Unable to resolve signature of class decorator when called as an expression`.
+
+```json
+{
+  "compilerOptions": {
+    // ... other options
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   }
 }
 ```
