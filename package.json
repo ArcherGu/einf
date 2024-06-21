@@ -41,7 +41,7 @@
     "@types/node": "20.14.7",
     "electron": "31.0.2",
     "eslint": "9.5.0",
-    "execa": "9.2.0",
+    "execa": "9.3.0",
     "lint-staged": "15.2.7",
     "simple-git-hooks": "2.11.1",
     "tsup": "8.1.0",
