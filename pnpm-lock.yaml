@@ -43,11 +43,11 @@ importers:
         specifier: 5.5.2
         version: 5.5.2
       vite:
-        specifier: 5.3.1
-        version: 5.3.1(@types/node@20.14.9)
+        specifier: 5.3.2
+        version: 5.3.2(@types/node@20.14.9)
       vite-plugin-doubleshot:
         specifier: 0.0.14
-        version: 0.0.14(electron@31.1.0)(postcss@8.4.38)(typescript@5.5.2)(vite@5.3.1(@types/node@20.14.9))
+        version: 0.0.14(electron@31.1.0)(postcss@8.4.38)(typescript@5.5.2)(vite@5.3.2(@types/node@20.14.9))
       vitest:
         specifier: 1.6.0
         version: 1.6.0(@types/node@20.14.9)
@@ -2935,8 +2935,8 @@ packages:
     peerDependencies:
       vite: '>=2.0.0'
 
-  vite@5.3.1:
-    resolution: {integrity: sha512-XBmSKRLXLxiaPYamLv3/hnP/KXDai1NDexN0FpkTaZXTfycHvkRHoenpgl/fvuK/kPbB6xAgoyiryAhQNxYmAQ==}
+  vite@5.3.2:
+    resolution: {integrity: sha512-6lA7OBHBlXUxiJxbO5aAY2fsHHzDr1q7DvXYnyZycRs2Dz+dXBWuhpWHvmljTRTpQC2uvGmUFFkSHF2vGo90MA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -6042,7 +6042,7 @@ snapshots:
       debug: 4.3.4
       pathe: 1.1.2
       picocolors: 1.0.0
-      vite: 5.3.1(@types/node@20.14.9)
+      vite: 5.3.2(@types/node@20.14.9)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -6053,10 +6053,10 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-doubleshot@0.0.14(electron@31.1.0)(postcss@8.4.38)(typescript@5.5.2)(vite@5.3.1(@types/node@20.14.9)):
+  vite-plugin-doubleshot@0.0.14(electron@31.1.0)(postcss@8.4.38)(typescript@5.5.2)(vite@5.3.2(@types/node@20.14.9)):
     dependencies:
       '@doubleshot/builder': 0.0.11(electron@31.1.0)(postcss@8.4.38)(typescript@5.5.2)
-      vite: 5.3.1(@types/node@20.14.9)
+      vite: 5.3.2(@types/node@20.14.9)
     transitivePeerDependencies:
       - '@swc/helpers'
       - debug
@@ -6067,7 +6067,7 @@ snapshots:
       - ts-node
       - typescript
 
-  vite@5.3.1(@types/node@20.14.9):
+  vite@5.3.2(@types/node@20.14.9):
     dependencies:
       esbuild: 0.21.4
       postcss: 8.4.38
@@ -6095,7 +6095,7 @@ snapshots:
       strip-literal: 2.0.0
       tinybench: 2.5.1
       tinypool: 0.8.3
-      vite: 5.3.1(@types/node@20.14.9)
+      vite: 5.3.2(@types/node@20.14.9)
       vite-node: 1.6.0(@types/node@20.14.9)
       why-is-node-running: 2.2.2
     optionalDependencies:
