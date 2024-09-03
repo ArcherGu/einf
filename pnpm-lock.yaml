@@ -38,16 +38,16 @@ importers:
         version: 2.11.1
       tsup:
         specifier: 8.2.4
-        version: 8.2.4(@swc/core@1.7.18)(jiti@1.21.0)(postcss@8.4.41)(tsx@4.16.3)(typescript@5.5.4)(yaml@2.5.0)
+        version: 8.2.4(@swc/core@1.7.18)(jiti@1.21.0)(postcss@8.4.44)(tsx@4.16.3)(typescript@5.5.4)(yaml@2.5.0)
       typescript:
         specifier: 5.5.4
         version: 5.5.4
       vite:
-        specifier: 5.4.2
-        version: 5.4.2(@types/node@20.16.3)
+        specifier: 5.4.3
+        version: 5.4.3(@types/node@20.16.3)
       vite-plugin-doubleshot:
         specifier: 0.0.17
-        version: 0.0.17(electron@32.0.1)(jiti@1.21.0)(postcss@8.4.41)(tsx@4.16.3)(typescript@5.5.4)(vite@5.4.2(@types/node@20.16.3))(yaml@2.5.0)
+        version: 0.0.17(electron@32.0.1)(jiti@1.21.0)(postcss@8.4.44)(tsx@4.16.3)(typescript@5.5.4)(vite@5.4.3(@types/node@20.16.3))(yaml@2.5.0)
       vitest:
         specifier: 2.0.5
         version: 2.0.5(@types/node@20.16.3)
@@ -2629,6 +2629,10 @@ packages:
     resolution: {integrity: sha512-TesUflQ0WKZqAvg52PWL6kHgLKP6xB6heTOdoYM0Wt2UHyxNa4K25EZZMgKns3BH1RLVbZCREPpLY0rhnNoHVQ==}
     engines: {node: ^10 || ^12 || >=14}
 
+  postcss@8.4.44:
+    resolution: {integrity: sha512-Aweb9unOEpQ3ezu4Q00DPvvM2ZTUitJdNKeP/+uQgr1IBIqu574IaZoURId7BKtWMREwzKa9OgzPzezWGPWFQw==}
+    engines: {node: ^10 || ^12 || >=14}
+
   prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
@@ -3095,8 +3099,8 @@ packages:
     peerDependencies:
       vite: '>=2.0.0'
 
-  vite@5.4.2:
-    resolution: {integrity: sha512-dDrQTRHp5C1fTFzcSaMxjk6vdpKvT+2/mIdE07Gw2ykehT49O0z/VHS3zZ8iV/Gh8BJJKHWOe5RjaNrW5xf/GA==}
+  vite@5.4.3:
+    resolution: {integrity: sha512-IH+nl64eq9lJjFqU+/yrRnrHPVTlgy42/+IzbOdaFDVlyLgI/wDlf+FCobXLX1cT0X5+7LMyH1mIy2xJdLfo8Q==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -3332,7 +3336,7 @@ snapshots:
       picocolors: 1.0.1
       sisteransi: 1.0.5
 
-  '@doubleshot/builder@0.0.12(electron@32.0.1)(jiti@1.21.0)(postcss@8.4.41)(tsx@4.16.3)(typescript@5.5.4)(yaml@2.5.0)':
+  '@doubleshot/builder@0.0.12(electron@32.0.1)(jiti@1.21.0)(postcss@8.4.44)(tsx@4.16.3)(typescript@5.5.4)(yaml@2.5.0)':
     dependencies:
       '@swc/core': 1.7.18
       bundle-require: 5.0.0(esbuild@0.23.1)
@@ -3342,7 +3346,7 @@ snapshots:
       esbuild: 0.23.1
       joycon: 3.1.1
       resolve-from: 5.0.0
-      tsup: 8.2.4(@swc/core@1.7.18)(jiti@1.21.0)(postcss@8.4.41)(tsx@4.16.3)(typescript@5.5.4)(yaml@2.5.0)
+      tsup: 8.2.4(@swc/core@1.7.18)(jiti@1.21.0)(postcss@8.4.44)(tsx@4.16.3)(typescript@5.5.4)(yaml@2.5.0)
       wait-on: 8.0.0
     optionalDependencies:
       electron: 32.0.1
@@ -5866,12 +5870,12 @@ snapshots:
 
   pluralize@8.0.0: {}
 
-  postcss-load-config@6.0.1(jiti@1.21.0)(postcss@8.4.41)(tsx@4.16.3)(yaml@2.5.0):
+  postcss-load-config@6.0.1(jiti@1.21.0)(postcss@8.4.44)(tsx@4.16.3)(yaml@2.5.0):
     dependencies:
       lilconfig: 3.1.2
     optionalDependencies:
       jiti: 1.21.0
-      postcss: 8.4.41
+      postcss: 8.4.44
       tsx: 4.16.3
       yaml: 2.5.0
 
@@ -5881,6 +5885,12 @@ snapshots:
       util-deprecate: 1.0.2
 
   postcss@8.4.41:
+    dependencies:
+      nanoid: 3.3.7
+      picocolors: 1.0.1
+      source-map-js: 1.2.0
+
+  postcss@8.4.44:
     dependencies:
       nanoid: 3.3.7
       picocolors: 1.0.1
@@ -6254,7 +6264,7 @@ snapshots:
 
   tslib@2.7.0: {}
 
-  tsup@8.2.4(@swc/core@1.7.18)(jiti@1.21.0)(postcss@8.4.41)(tsx@4.16.3)(typescript@5.5.4)(yaml@2.5.0):
+  tsup@8.2.4(@swc/core@1.7.18)(jiti@1.21.0)(postcss@8.4.44)(tsx@4.16.3)(typescript@5.5.4)(yaml@2.5.0):
     dependencies:
       bundle-require: 5.0.0(esbuild@0.23.0)
       cac: 6.7.14
@@ -6266,7 +6276,7 @@ snapshots:
       globby: 11.1.0
       joycon: 3.1.1
       picocolors: 1.0.1
-      postcss-load-config: 6.0.1(jiti@1.21.0)(postcss@8.4.41)(tsx@4.16.3)(yaml@2.5.0)
+      postcss-load-config: 6.0.1(jiti@1.21.0)(postcss@8.4.44)(tsx@4.16.3)(yaml@2.5.0)
       resolve-from: 5.0.0
       rollup: 4.19.0
       source-map: 0.8.0-beta.0
@@ -6274,7 +6284,7 @@ snapshots:
       tree-kill: 1.2.2
     optionalDependencies:
       '@swc/core': 1.7.18
-      postcss: 8.4.41
+      postcss: 8.4.44
       typescript: 5.5.4
     transitivePeerDependencies:
       - jiti
@@ -6345,7 +6355,7 @@ snapshots:
       debug: 4.3.6
       pathe: 1.1.2
       tinyrainbow: 1.2.0
-      vite: 5.4.2(@types/node@20.16.3)
+      vite: 5.4.3(@types/node@20.16.3)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -6357,10 +6367,10 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-doubleshot@0.0.17(electron@32.0.1)(jiti@1.21.0)(postcss@8.4.41)(tsx@4.16.3)(typescript@5.5.4)(vite@5.4.2(@types/node@20.16.3))(yaml@2.5.0):
+  vite-plugin-doubleshot@0.0.17(electron@32.0.1)(jiti@1.21.0)(postcss@8.4.44)(tsx@4.16.3)(typescript@5.5.4)(vite@5.4.3(@types/node@20.16.3))(yaml@2.5.0):
     dependencies:
-      '@doubleshot/builder': 0.0.12(electron@32.0.1)(jiti@1.21.0)(postcss@8.4.41)(tsx@4.16.3)(typescript@5.5.4)(yaml@2.5.0)
-      vite: 5.4.2(@types/node@20.16.3)
+      '@doubleshot/builder': 0.0.12(electron@32.0.1)(jiti@1.21.0)(postcss@8.4.44)(tsx@4.16.3)(typescript@5.5.4)(yaml@2.5.0)
+      vite: 5.4.3(@types/node@20.16.3)
     transitivePeerDependencies:
       - '@microsoft/api-extractor'
       - '@swc/helpers'
@@ -6374,10 +6384,10 @@ snapshots:
       - typescript
       - yaml
 
-  vite@5.4.2(@types/node@20.16.3):
+  vite@5.4.3(@types/node@20.16.3):
     dependencies:
       esbuild: 0.21.5
-      postcss: 8.4.41
+      postcss: 8.4.44
       rollup: 4.21.0
     optionalDependencies:
       '@types/node': 20.16.3
@@ -6401,7 +6411,7 @@ snapshots:
       tinybench: 2.8.0
       tinypool: 1.0.0
       tinyrainbow: 1.2.0
-      vite: 5.4.2(@types/node@20.16.3)
+      vite: 5.4.3(@types/node@20.16.3)
       vite-node: 2.0.5(@types/node@20.16.3)
       why-is-node-running: 2.3.0
     optionalDependencies:
