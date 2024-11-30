@@ -16,8 +16,8 @@ importers:
         version: 0.2.2
     devDependencies:
       '@lightwing/eslint-config':
-        specifier: 1.0.92
-        version: 1.0.92(@typescript-eslint/utils@8.16.0(eslint@9.16.0(jiti@1.21.0))(typescript@5.7.2))(@vue/compiler-sfc@3.4.21)(eslint@9.16.0(jiti@1.21.0))(typescript@5.7.2)(vitest@2.1.6(@types/node@22.10.1)(jiti@1.21.0)(tsx@4.16.3)(yaml@2.5.0))
+        specifier: 1.0.93
+        version: 1.0.93(@typescript-eslint/utils@8.16.0(eslint@9.16.0(jiti@1.21.0))(typescript@5.7.2))(@vue/compiler-sfc@3.4.21)(eslint@9.16.0(jiti@1.21.0))(typescript@5.7.2)(vitest@2.1.6(@types/node@22.10.1)(jiti@1.21.0)(tsx@4.16.3)(yaml@2.5.0))
       '@types/node':
         specifier: 22.10.1
         version: 22.10.1
@@ -58,8 +58,8 @@ packages:
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
     engines: {node: '>=0.10.0'}
 
-  '@antfu/eslint-config@3.11.1':
-    resolution: {integrity: sha512-JZKlD+qeJiQDgwKsJ5mkvR/6XhkCkSf3UN6OlVYuCnuKLga6oyTcGQLx8yqLqKAdqC785sg5Vgbkaa7k4goYBw==}
+  '@antfu/eslint-config@3.11.2':
+    resolution: {integrity: sha512-hoi2MnOdiKL8mIhpMtinwMrqVPq6QVbHPA+BuQD4pqE6yVLyYvjdLFiKApMsezAM+YofCsbhak2oY+JCiIyeNA==}
     hasBin: true
     peerDependencies:
       '@eslint-react/eslint-plugin': ^1.5.8
@@ -760,8 +760,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@lightwing/eslint-config@1.0.92':
-    resolution: {integrity: sha512-0JkrFPzrQemkzpBDVlvhtlRoyXZXXwbWnm371mtDntl07B9WbuEMKHVuJAzqvkTNoF1fOnLlXmIbCIjozTctBg==}
+  '@lightwing/eslint-config@1.0.93':
+    resolution: {integrity: sha512-p/QbzaVvaUi4y8HJSlpBtbL6qonKMQFmtCML++ZJ6cDJjdqVU/lbCMbN+Ztu/L/EQ08NeKksFV1Ey1P3jtk1Rg==}
     peerDependencies:
       eslint: '>=8.0.0'
       typescript: '>=4.0.0'
@@ -3246,7 +3246,7 @@ snapshots:
 
   '@aashutoshrathi/word-wrap@1.2.6': {}
 
-  '@antfu/eslint-config@3.11.1(@eslint-react/eslint-plugin@1.17.1(eslint@9.16.0(jiti@1.21.0))(typescript@5.7.2))(@typescript-eslint/utils@8.16.0(eslint@9.16.0(jiti@1.21.0))(typescript@5.7.2))(@unocss/eslint-plugin@0.64.1(eslint@9.16.0(jiti@1.21.0))(typescript@5.7.2))(@vue/compiler-sfc@3.4.21)(eslint-plugin-format@0.1.2(eslint@9.16.0(jiti@1.21.0)))(eslint-plugin-react-hooks@5.0.0(eslint@9.16.0(jiti@1.21.0)))(eslint-plugin-react-refresh@0.4.14(eslint@9.16.0(jiti@1.21.0)))(eslint@9.16.0(jiti@1.21.0))(typescript@5.7.2)(vitest@2.1.6(@types/node@22.10.1)(jiti@1.21.0)(tsx@4.16.3)(yaml@2.5.0))':
+  '@antfu/eslint-config@3.11.2(@eslint-react/eslint-plugin@1.17.1(eslint@9.16.0(jiti@1.21.0))(typescript@5.7.2))(@typescript-eslint/utils@8.16.0(eslint@9.16.0(jiti@1.21.0))(typescript@5.7.2))(@unocss/eslint-plugin@0.64.1(eslint@9.16.0(jiti@1.21.0))(typescript@5.7.2))(@vue/compiler-sfc@3.4.21)(eslint-plugin-format@0.1.2(eslint@9.16.0(jiti@1.21.0)))(eslint-plugin-react-hooks@5.0.0(eslint@9.16.0(jiti@1.21.0)))(eslint-plugin-react-refresh@0.4.14(eslint@9.16.0(jiti@1.21.0)))(eslint@9.16.0(jiti@1.21.0))(typescript@5.7.2)(vitest@2.1.6(@types/node@22.10.1)(jiti@1.21.0)(tsx@4.16.3)(yaml@2.5.0))':
     dependencies:
       '@antfu/install-pkg': 0.5.0
       '@clack/prompts': 0.8.2
@@ -3851,9 +3851,9 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@lightwing/eslint-config@1.0.92(@typescript-eslint/utils@8.16.0(eslint@9.16.0(jiti@1.21.0))(typescript@5.7.2))(@vue/compiler-sfc@3.4.21)(eslint@9.16.0(jiti@1.21.0))(typescript@5.7.2)(vitest@2.1.6(@types/node@22.10.1)(jiti@1.21.0)(tsx@4.16.3)(yaml@2.5.0))':
+  '@lightwing/eslint-config@1.0.93(@typescript-eslint/utils@8.16.0(eslint@9.16.0(jiti@1.21.0))(typescript@5.7.2))(@vue/compiler-sfc@3.4.21)(eslint@9.16.0(jiti@1.21.0))(typescript@5.7.2)(vitest@2.1.6(@types/node@22.10.1)(jiti@1.21.0)(tsx@4.16.3)(yaml@2.5.0))':
     dependencies:
-      '@antfu/eslint-config': 3.11.1(@eslint-react/eslint-plugin@1.17.1(eslint@9.16.0(jiti@1.21.0))(typescript@5.7.2))(@typescript-eslint/utils@8.16.0(eslint@9.16.0(jiti@1.21.0))(typescript@5.7.2))(@unocss/eslint-plugin@0.64.1(eslint@9.16.0(jiti@1.21.0))(typescript@5.7.2))(@vue/compiler-sfc@3.4.21)(eslint-plugin-format@0.1.2(eslint@9.16.0(jiti@1.21.0)))(eslint-plugin-react-hooks@5.0.0(eslint@9.16.0(jiti@1.21.0)))(eslint-plugin-react-refresh@0.4.14(eslint@9.16.0(jiti@1.21.0)))(eslint@9.16.0(jiti@1.21.0))(typescript@5.7.2)(vitest@2.1.6(@types/node@22.10.1)(jiti@1.21.0)(tsx@4.16.3)(yaml@2.5.0))
+      '@antfu/eslint-config': 3.11.2(@eslint-react/eslint-plugin@1.17.1(eslint@9.16.0(jiti@1.21.0))(typescript@5.7.2))(@typescript-eslint/utils@8.16.0(eslint@9.16.0(jiti@1.21.0))(typescript@5.7.2))(@unocss/eslint-plugin@0.64.1(eslint@9.16.0(jiti@1.21.0))(typescript@5.7.2))(@vue/compiler-sfc@3.4.21)(eslint-plugin-format@0.1.2(eslint@9.16.0(jiti@1.21.0)))(eslint-plugin-react-hooks@5.0.0(eslint@9.16.0(jiti@1.21.0)))(eslint-plugin-react-refresh@0.4.14(eslint@9.16.0(jiti@1.21.0)))(eslint@9.16.0(jiti@1.21.0))(typescript@5.7.2)(vitest@2.1.6(@types/node@22.10.1)(jiti@1.21.0)(tsx@4.16.3)(yaml@2.5.0))
       '@eslint-react/eslint-plugin': 1.17.1(eslint@9.16.0(jiti@1.21.0))(typescript@5.7.2)
       '@unocss/eslint-plugin': 0.64.1(eslint@9.16.0(jiti@1.21.0))(typescript@5.7.2)
       eslint: 9.16.0(jiti@1.21.0)
