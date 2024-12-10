@@ -31,23 +31,23 @@ importers:
         specifier: 9.5.2
         version: 9.5.2
       lint-staged:
-        specifier: 15.2.10
-        version: 15.2.10
+        specifier: 15.2.11
+        version: 15.2.11
       simple-git-hooks:
         specifier: 2.11.1
         version: 2.11.1
       tsup:
         specifier: 8.3.5
-        version: 8.3.5(@swc/core@1.7.18)(jiti@1.21.0)(postcss@8.4.49)(tsx@4.16.3)(typescript@5.7.2)(yaml@2.5.0)
+        version: 8.3.5(@swc/core@1.7.18)(jiti@1.21.0)(postcss@8.4.49)(tsx@4.16.3)(typescript@5.7.2)(yaml@2.6.1)
       typescript:
         specifier: 5.7.2
         version: 5.7.2
       vite:
         specifier: 6.0.3
-        version: 6.0.3(@types/node@22.10.1)(jiti@1.21.0)(tsx@4.16.3)(yaml@2.5.0)
+        version: 6.0.3(@types/node@22.10.1)(jiti@1.21.0)(tsx@4.16.3)(yaml@2.6.1)
       vite-plugin-doubleshot:
         specifier: 0.0.17
-        version: 0.0.17(electron@33.2.1)(jiti@1.21.0)(postcss@8.4.49)(tsx@4.16.3)(typescript@5.7.2)(vite@6.0.3(@types/node@22.10.1)(jiti@1.21.0)(tsx@4.16.3)(yaml@2.5.0))(yaml@2.5.0)
+        version: 0.0.17(electron@33.2.1)(jiti@1.21.0)(postcss@8.4.49)(tsx@4.16.3)(typescript@5.7.2)(vite@6.0.3(@types/node@22.10.1)(jiti@1.21.0)(tsx@4.16.3)(yaml@2.6.1))(yaml@2.6.1)
       vitest:
         specifier: 2.1.8
         version: 2.1.8(@types/node@22.10.1)
@@ -1382,8 +1382,8 @@ packages:
       supports-color:
         optional: true
 
-  debug@4.3.6:
-    resolution: {integrity: sha512-O/09Bd4Z1fBrU4VzkhFqVgpPzaGbw6Sm9FEkBT1A/YBXQFGuuSxa1dN2nxgxS34JmKXqYx8CZAwEVoJFImUXIg==}
+  debug@4.3.7:
+    resolution: {integrity: sha512-Er2nc/H7RrMXZBFCEim6TCmMk02Z8vLC2Rbi1KEBggpo0fS6l0S1nnapwmIi3yW/+GOJap1Krg4w0Hg80oCqgQ==}
     engines: {node: '>=6.0'}
     peerDependencies:
       supports-color: '*'
@@ -1391,8 +1391,8 @@ packages:
       supports-color:
         optional: true
 
-  debug@4.3.7:
-    resolution: {integrity: sha512-Er2nc/H7RrMXZBFCEim6TCmMk02Z8vLC2Rbi1KEBggpo0fS6l0S1nnapwmIi3yW/+GOJap1Krg4w0Hg80oCqgQ==}
+  debug@4.4.0:
+    resolution: {integrity: sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==}
     engines: {node: '>=6.0'}
     peerDependencies:
       supports-color: '*'
@@ -2184,16 +2184,20 @@ packages:
     resolution: {integrity: sha512-eop+wDAvpItUys0FWkHIKeC9ybYrTGbU41U5K7+bttZZeohvnY7M9dZ5kB21GNWiFT2q1OoPTvncPCgSOVO5ow==}
     engines: {node: '>=14'}
 
+  lilconfig@3.1.3:
+    resolution: {integrity: sha512-/vlFKAoH5Cgt3Ie+JLhRbwOsCQePABiU3tJ1egGvyQ+33R/vcwM2Zl2QR/LzjsBeItPt3oSVXapn+m4nQDvpzw==}
+    engines: {node: '>=14'}
+
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
 
-  lint-staged@15.2.10:
-    resolution: {integrity: sha512-5dY5t743e1byO19P9I4b3x8HJwalIznL5E1FWYnU6OWw33KxNBSLAc6Cy7F2PsFEO8FKnLwjwm5hx7aMF0jzZg==}
+  lint-staged@15.2.11:
+    resolution: {integrity: sha512-Ev6ivCTYRTGs9ychvpVw35m/bcNDuBN+mnTeObCL5h+boS5WzBEC6LHI4I9F/++sZm1m+J2LEiy0gxL/R9TBqQ==}
     engines: {node: '>=18.12.0'}
     hasBin: true
 
-  listr2@8.2.4:
-    resolution: {integrity: sha512-opevsywziHd3zHCVQGAj8zu+Z3yHNkkoYhWIGnq54RrCVwLz0MozotJEDnKsIBLvkfLGN6BLOyAeRrYI0pKA4g==}
+  listr2@8.2.5:
+    resolution: {integrity: sha512-iyAZCeyD+c1gPyE9qpFu8af0Y+MRtmKOncdGoA2S5EY8iFq99dmmvkNnHiWo+pj0s7yH7l3KPIgee77tKpXPWQ==}
     engines: {node: '>=18.0.0'}
 
   load-tsconfig@0.2.3:
@@ -2424,9 +2428,6 @@ packages:
 
   mlly@1.7.3:
     resolution: {integrity: sha512-xUsx5n/mN0uQf4V548PKQ+YShA4/IW0KI1dZhrNrPCLG+xizETbHTkOa1f8/xut9JRPp8kQuMnz0oqwkTiLo/A==}
-
-  ms@2.1.2:
-    resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
 
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
@@ -3247,6 +3248,11 @@ packages:
     engines: {node: '>= 14'}
     hasBin: true
 
+  yaml@2.6.1:
+    resolution: {integrity: sha512-7r0XPzioN/Q9kXBro/XPnA6kznR73DHq+GXh5ON7ZozRO6aMjbmiBuKste2wslTFkC5d1dw0GooOCepZXJ2SAg==}
+    engines: {node: '>= 14'}
+    hasBin: true
+
   yargs-parser@21.1.1:
     resolution: {integrity: sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==}
     engines: {node: '>=12'}
@@ -3367,7 +3373,7 @@ snapshots:
       picocolors: 1.1.1
       sisteransi: 1.0.5
 
-  '@doubleshot/builder@0.0.12(electron@33.2.1)(jiti@1.21.0)(postcss@8.4.49)(tsx@4.16.3)(typescript@5.7.2)(yaml@2.5.0)':
+  '@doubleshot/builder@0.0.12(electron@33.2.1)(jiti@1.21.0)(postcss@8.4.49)(tsx@4.16.3)(typescript@5.7.2)(yaml@2.6.1)':
     dependencies:
       '@swc/core': 1.7.18
       bundle-require: 5.0.0(esbuild@0.23.1)
@@ -3377,7 +3383,7 @@ snapshots:
       esbuild: 0.23.1
       joycon: 3.1.1
       resolve-from: 5.0.0
-      tsup: 8.3.5(@swc/core@1.7.18)(jiti@1.21.0)(postcss@8.4.49)(tsx@4.16.3)(typescript@5.7.2)(yaml@2.5.0)
+      tsup: 8.3.5(@swc/core@1.7.18)(jiti@1.21.0)(postcss@8.4.49)(tsx@4.16.3)(typescript@5.7.2)(yaml@2.6.1)
       wait-on: 8.0.0
     optionalDependencies:
       electron: 33.2.1
@@ -4501,11 +4507,11 @@ snapshots:
     dependencies:
       ms: 2.1.3
 
-  debug@4.3.6:
-    dependencies:
-      ms: 2.1.2
-
   debug@4.3.7:
+    dependencies:
+      ms: 2.1.3
+
+  debug@4.4.0:
     dependencies:
       ms: 2.1.3
 
@@ -5510,24 +5516,26 @@ snapshots:
 
   lilconfig@3.1.2: {}
 
+  lilconfig@3.1.3: {}
+
   lines-and-columns@1.2.4: {}
 
-  lint-staged@15.2.10:
+  lint-staged@15.2.11:
     dependencies:
       chalk: 5.3.0
       commander: 12.1.0
-      debug: 4.3.6
+      debug: 4.4.0
       execa: 8.0.1
-      lilconfig: 3.1.2
-      listr2: 8.2.4
+      lilconfig: 3.1.3
+      listr2: 8.2.5
       micromatch: 4.0.8
       pidtree: 0.6.0
       string-argv: 0.3.2
-      yaml: 2.5.0
+      yaml: 2.6.1
     transitivePeerDependencies:
       - supports-color
 
-  listr2@8.2.4:
+  listr2@8.2.5:
     dependencies:
       cli-truncate: 4.0.0
       colorette: 2.0.20
@@ -5924,8 +5932,6 @@ snapshots:
       pkg-types: 1.2.1
       ufo: 1.5.4
 
-  ms@2.1.2: {}
-
   ms@2.1.3: {}
 
   mz@2.7.0:
@@ -6071,14 +6077,14 @@ snapshots:
 
   pluralize@8.0.0: {}
 
-  postcss-load-config@6.0.1(jiti@1.21.0)(postcss@8.4.49)(tsx@4.16.3)(yaml@2.5.0):
+  postcss-load-config@6.0.1(jiti@1.21.0)(postcss@8.4.49)(tsx@4.16.3)(yaml@2.6.1):
     dependencies:
       lilconfig: 3.1.2
     optionalDependencies:
       jiti: 1.21.0
       postcss: 8.4.49
       tsx: 4.16.3
-      yaml: 2.5.0
+      yaml: 2.6.1
 
   postcss-selector-parser@6.0.15:
     dependencies:
@@ -6434,7 +6440,7 @@ snapshots:
 
   tslib@2.7.0: {}
 
-  tsup@8.3.5(@swc/core@1.7.18)(jiti@1.21.0)(postcss@8.4.49)(tsx@4.16.3)(typescript@5.7.2)(yaml@2.5.0):
+  tsup@8.3.5(@swc/core@1.7.18)(jiti@1.21.0)(postcss@8.4.49)(tsx@4.16.3)(typescript@5.7.2)(yaml@2.6.1):
     dependencies:
       bundle-require: 5.0.0(esbuild@0.24.0)
       cac: 6.7.14
@@ -6444,7 +6450,7 @@ snapshots:
       esbuild: 0.24.0
       joycon: 3.1.1
       picocolors: 1.1.1
-      postcss-load-config: 6.0.1(jiti@1.21.0)(postcss@8.4.49)(tsx@4.16.3)(yaml@2.5.0)
+      postcss-load-config: 6.0.1(jiti@1.21.0)(postcss@8.4.49)(tsx@4.16.3)(yaml@2.6.1)
       resolve-from: 5.0.0
       rollup: 4.24.0
       source-map: 0.8.0-beta.0
@@ -6556,10 +6562,10 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-doubleshot@0.0.17(electron@33.2.1)(jiti@1.21.0)(postcss@8.4.49)(tsx@4.16.3)(typescript@5.7.2)(vite@6.0.3(@types/node@22.10.1)(jiti@1.21.0)(tsx@4.16.3)(yaml@2.5.0))(yaml@2.5.0):
+  vite-plugin-doubleshot@0.0.17(electron@33.2.1)(jiti@1.21.0)(postcss@8.4.49)(tsx@4.16.3)(typescript@5.7.2)(vite@6.0.3(@types/node@22.10.1)(jiti@1.21.0)(tsx@4.16.3)(yaml@2.6.1))(yaml@2.6.1):
     dependencies:
-      '@doubleshot/builder': 0.0.12(electron@33.2.1)(jiti@1.21.0)(postcss@8.4.49)(tsx@4.16.3)(typescript@5.7.2)(yaml@2.5.0)
-      vite: 6.0.3(@types/node@22.10.1)(jiti@1.21.0)(tsx@4.16.3)(yaml@2.5.0)
+      '@doubleshot/builder': 0.0.12(electron@33.2.1)(jiti@1.21.0)(postcss@8.4.49)(tsx@4.16.3)(typescript@5.7.2)(yaml@2.6.1)
+      vite: 6.0.3(@types/node@22.10.1)(jiti@1.21.0)(tsx@4.16.3)(yaml@2.6.1)
     transitivePeerDependencies:
       - '@microsoft/api-extractor'
       - '@swc/helpers'
@@ -6582,7 +6588,7 @@ snapshots:
       '@types/node': 22.10.1
       fsevents: 2.3.3
 
-  vite@6.0.3(@types/node@22.10.1)(jiti@1.21.0)(tsx@4.16.3)(yaml@2.5.0):
+  vite@6.0.3(@types/node@22.10.1)(jiti@1.21.0)(tsx@4.16.3)(yaml@2.6.1):
     dependencies:
       esbuild: 0.24.0
       postcss: 8.4.49
@@ -6592,7 +6598,7 @@ snapshots:
       fsevents: 2.3.3
       jiti: 1.21.0
       tsx: 4.16.3
-      yaml: 2.5.0
+      yaml: 2.6.1
 
   vitest@2.1.8(@types/node@22.10.1):
     dependencies:
@@ -6700,6 +6706,8 @@ snapshots:
       yaml: 2.5.0
 
   yaml@2.5.0: {}
+
+  yaml@2.6.1: {}
 
   yargs-parser@21.1.1: {}
 
