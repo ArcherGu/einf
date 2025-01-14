@@ -22,8 +22,8 @@ importers:
         specifier: 22.10.6
         version: 22.10.6
       electron:
-        specifier: 33.3.1
-        version: 33.3.1
+        specifier: 34.0.0
+        version: 34.0.0
       eslint:
         specifier: 9.18.0
         version: 9.18.0(jiti@2.4.2)
@@ -47,7 +47,7 @@ importers:
         version: 6.0.7(@types/node@22.10.6)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.6.1)
       vite-plugin-doubleshot:
         specifier: 0.0.17
-        version: 0.0.17(electron@33.3.1)(jiti@2.4.2)(postcss@8.4.49)(tsx@4.19.2)(typescript@5.7.3)(vite@6.0.7(@types/node@22.10.6)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.6.1))(yaml@2.6.1)
+        version: 0.0.17(electron@34.0.0)(jiti@2.4.2)(postcss@8.4.49)(tsx@4.19.2)(typescript@5.7.3)(vite@6.0.7(@types/node@22.10.6)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.6.1))(yaml@2.6.1)
       vitest:
         specifier: 2.1.8
         version: 2.1.8(@types/node@22.10.6)
@@ -1607,8 +1607,8 @@ packages:
   electron-to-chromium@1.5.40:
     resolution: {integrity: sha512-LYm78o6if4zTasnYclgQzxEcgMoIcybWOhkATWepN95uwVVWV0/IW10v+2sIeHE+bIYWipLneTftVyQm45UY7g==}
 
-  electron@33.3.1:
-    resolution: {integrity: sha512-Z7l2bVgpdKxHQMI4i0CirBX2n+iCYKOx5mbzNM3BpOyFELwlobEXKmzCmEnwP+3EcNeIhUQyIEBFQxN06QgdIw==}
+  electron@34.0.0:
+    resolution: {integrity: sha512-fpaPb0lifoUJ6UJa4Lk8/0B2Ku/xDZWdc1Gkj67jbygTCrvSon0qquju6Ltx1Kz23GRqqlIHXiy9EvrjpY7/Wg==}
     engines: {node: '>= 12.20.55'}
     hasBin: true
 
@@ -3524,7 +3524,7 @@ snapshots:
       picocolors: 1.1.1
       sisteransi: 1.0.5
 
-  '@doubleshot/builder@0.0.12(electron@33.3.1)(jiti@2.4.2)(postcss@8.4.49)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.6.1)':
+  '@doubleshot/builder@0.0.12(electron@34.0.0)(jiti@2.4.2)(postcss@8.4.49)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.6.1)':
     dependencies:
       '@swc/core': 1.7.18
       bundle-require: 5.0.0(esbuild@0.23.1)
@@ -3537,7 +3537,7 @@ snapshots:
       tsup: 8.3.5(@swc/core@1.7.18)(jiti@2.4.2)(postcss@8.4.49)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.6.1)
       wait-on: 8.0.0
     optionalDependencies:
-      electron: 33.3.1
+      electron: 34.0.0
     transitivePeerDependencies:
       - '@microsoft/api-extractor'
       - '@swc/helpers'
@@ -4805,7 +4805,7 @@ snapshots:
 
   electron-to-chromium@1.5.40: {}
 
-  electron@33.3.1:
+  electron@34.0.0:
     dependencies:
       '@electron/get': 2.0.2
       '@types/node': 20.17.2
@@ -6839,9 +6839,9 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-doubleshot@0.0.17(electron@33.3.1)(jiti@2.4.2)(postcss@8.4.49)(tsx@4.19.2)(typescript@5.7.3)(vite@6.0.7(@types/node@22.10.6)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.6.1))(yaml@2.6.1):
+  vite-plugin-doubleshot@0.0.17(electron@34.0.0)(jiti@2.4.2)(postcss@8.4.49)(tsx@4.19.2)(typescript@5.7.3)(vite@6.0.7(@types/node@22.10.6)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.6.1))(yaml@2.6.1):
     dependencies:
-      '@doubleshot/builder': 0.0.12(electron@33.3.1)(jiti@2.4.2)(postcss@8.4.49)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.6.1)
+      '@doubleshot/builder': 0.0.12(electron@34.0.0)(jiti@2.4.2)(postcss@8.4.49)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.6.1)
       vite: 6.0.7(@types/node@22.10.6)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.6.1)
     transitivePeerDependencies:
       - '@microsoft/api-extractor'
