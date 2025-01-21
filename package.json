@@ -46,7 +46,7 @@
     "simple-git-hooks": "2.11.1",
     "tsup": "8.3.5",
     "typescript": "5.7.3",
-    "vite": "6.0.7",
+    "vite": "6.0.9",
     "vite-plugin-doubleshot": "0.0.17",
     "vitest": "2.1.8"
   },
