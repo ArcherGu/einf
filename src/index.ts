@@ -1,11 +1,11 @@
-import 'reflect-metadata'
 import type { BrowserWindow } from 'electron'
 import { app, ipcMain } from 'electron'
-import { DEFAULT_WIN_NAME, INJECTABLE, INJECT_NAME, INJECT_TYPE, IPC_HANDLE, IPC_ON, IPC_SEND, IPC_WIN_NAME, PARAMTYPES_METADATA } from './constants'
+import { DEFAULT_WIN_NAME, INJECT_NAME, INJECT_TYPE, INJECTABLE, IPC_HANDLE, IPC_ON, IPC_SEND, IPC_WIN_NAME, PARAMTYPES_METADATA } from './constants'
 import { createLogger } from './log'
+import 'reflect-metadata'
 
-export { createLogger } from './log'
 export * from './decorators'
+export { createLogger } from './log'
 
 type Construct<T = any> = new (...args: Array<any>) => T
 export type ControllerClass = Construct

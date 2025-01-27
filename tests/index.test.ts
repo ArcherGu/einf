@@ -1,6 +1,6 @@
 import path from 'node:path'
-import { beforeAll, describe, expect, it } from 'vitest'
 import { execa } from 'execa'
+import { beforeAll, describe, expect, it } from 'vitest'
 
 const mockDir = path.resolve(__dirname, './mock')
 

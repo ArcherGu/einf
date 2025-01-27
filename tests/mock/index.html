@@ -1,46 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Einf Test</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Einf Test</title>
-</head>
+  <body>
+    <h1>Einf Test</h1>
+    <script type="text/javascript">
+      const { sendMsg, sendAnotherMsg, throwError, printLog, onReplyMsg, exit } = window.electron
 
-<body>
-  <h1>Einf Test</h1>
-  <script type="text/javascript">
-    const {
-      sendMsg,
-      sendAnotherMsg,
-      throwError,
-      printLog,
-      onReplyMsg,
-      exit,
-    } = window.electron
+      printLog('Call ipc on')
 
-    printLog("Call ipc on")
+      onReplyMsg(async (msg) => {
+        printLog(msg)
+        const msgFromMain = await sendMsg('hello, this is the renderer')
+        printLog(msgFromMain)
 
-    onReplyMsg(async (msg) => {
-      printLog(msg)
-      const msgFromMain = await sendMsg("hello, this is the renderer")
-      printLog(msgFromMain)
+        const anotherMsgFromMain = await sendAnotherMsg('hello, this is the renderer again')
+        printLog(anotherMsgFromMain)
 
-      const anotherMsgFromMain = await sendAnotherMsg("hello, this is the renderer again")
-      printLog(anotherMsgFromMain)
+        try {
+          await throwError()
+        } catch (error) {
+          await printLog(error.message)
+        }
 
-      try {
-        await throwError()
-      } catch (error) {
-        await printLog(error.message)
-      }
-
-      setTimeout(() => {
-        exit()
-      }, 500)
-    })
-  </script>
-</body>
-
+        setTimeout(() => {
+          exit()
+        }, 500)
+      })
+    </script>
+  </body>
 </html>

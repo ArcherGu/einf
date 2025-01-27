@@ -1,4 +1,4 @@
-import { BrowserWindow, app } from 'electron'
+import { app, BrowserWindow } from 'electron'
 import { Controller, Inject, IpcHandle, IpcOn, IpcSend, Window } from '../../../dist'
 import { AppService } from './app.service'
 

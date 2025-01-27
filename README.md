@@ -46,11 +46,11 @@ pnpm add einf
 
 ## Usage
 
-1. Entry point of your electron application like `index.ts`: 
+1. Entry point of your electron application like `index.ts`:
 
 ```ts
-import { BrowserWindow, app } from 'electron'
 import { createEinf } from 'einf'
+import { app, BrowserWindow } from 'electron'
 import { AppController } from './app.controller'
 
 async function bootstrap() {
@@ -77,8 +77,8 @@ bootstrap()
 
 ```ts
 import type { BrowserWindow } from 'electron'
-import { app } from 'electron'
 import { Controller, Inject, IpcHandle, IpcSend, Window } from 'einf'
+import { app } from 'electron'
 import { AppService } from './app.service'
 
 @Controller()

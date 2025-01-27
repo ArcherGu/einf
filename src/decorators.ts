@@ -1,4 +1,4 @@
-import { DEFAULT_WIN_NAME, INJECTABLE, INJECT_NAME, INJECT_TYPE, IPC_HANDLE, IPC_ON, IPC_SEND, IPC_WIN_NAME, PARAMTYPES_METADATA } from './constants'
+import { DEFAULT_WIN_NAME, INJECT_NAME, INJECT_TYPE, INJECTABLE, IPC_HANDLE, IPC_ON, IPC_SEND, IPC_WIN_NAME, PARAMTYPES_METADATA } from './constants'
 
 /**
  * Ipc handle decorator. It will be called by ipcRenderer.invoke
