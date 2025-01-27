@@ -8,12 +8,16 @@ on:
 
 jobs:
   test:
-    if: '!contains(github.event.head_commit.message, ''skip-ci'')'
+    if: ${{!contains(github.event.head_commit.message, 'skip-ci')}}
 
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest]
-        node-version: [18.x, 20.x]
+        os: [windows-latest, macos-14]
+        node-version: [22.x]
+        architecture: [x64, arm64]
+        exclude:
+          - os: windows-latest
+            architecture: arm64
 
     runs-on: ${{ matrix.os }}
 
@@ -32,11 +36,11 @@ jobs:
           cache-name: cache-pnpm-store
         with:
           path: ${{ github.workspace }}/.pnpm-store
-          key: ${{ runner.os }}-${{ matrix.node-version }}-test-${{ env.cache-name }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          key: ${{ runner.os }}-${{matrix.architecture}}-${{ matrix.node-version }}-test-${{ env.cache-name }}-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
-            ${{ runner.os }}-${{ matrix.node-version }}-test-${{ env.cache-name }}-
-            ${{ runner.os }}-${{ matrix.node-version }}-test-
-            ${{ runner.os }}-
+            ${{ runner.os }}-${{matrix.architecture}}-${{ matrix.node-version }}-test-${{ env.cache-name }}-
+            ${{ runner.os }}-${{matrix.architecture}}-${{ matrix.node-version }}-test-
+            ${{ runner.os }}-${{matrix.architecture}}-
 
       - name: Install pnpm
         run: npm i -g pnpm
@@ -45,23 +49,18 @@ jobs:
         run: pnpm config set store-dir .pnpm-store
 
       - name: Install deps
-        run: pnpm i
+        run: pnpm i --no-frozen-lockfile
 
-      - name: Build
-        run: pnpm build
-
-      - name: Test
-        uses: coactions/setup-xvfb@v1
-        with:
-          run: pnpm test
+      - name: Build and Test
+        run: pnpm test
 
   release:
-    if: '!contains(github.event.head_commit.message, ''skip-release'') && !contains(github.event.head_commit.message, ''skip-ci'') && github.event_name != ''pull_request'''
+    if: ${{!contains(github.event.head_commit.message, 'skip-release') && !contains(github.event.head_commit.message, 'skip-ci') && github.event_name != 'pull_request'}}
 
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node-version: [20.x]
+        node-version: [22.x]
 
     runs-on: ${{ matrix.os }}
     needs: [test]
