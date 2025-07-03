@@ -37,7 +37,7 @@
     "reflect-metadata": "^0.2.2"
   },
   "devDependencies": {
-    "@lightwing/eslint-config": "1.0.121",
+    "@lightwing/eslint-config": "1.0.122",
     "@types/node": "22.16.0",
     "electron": "37.2.0",
     "eslint": "9.30.1",
