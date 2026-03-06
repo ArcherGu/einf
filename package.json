@@ -40,7 +40,7 @@
     "@lightwing/eslint-config": "1.0.147",
     "@types/node": "25.3.5",
     "baseline-browser-mapping": "^2.10.0",
-    "electron": "40.7.0",
+    "electron": "40.8.0",
     "eslint": "10.0.2",
     "execa": "9.6.1",
     "lint-staged": "16.3.2",
