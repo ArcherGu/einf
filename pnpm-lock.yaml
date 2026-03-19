@@ -23,7 +23,7 @@ importers:
         version: 25.5.0
       baseline-browser-mapping:
         specifier: ^2.10.0
-        version: 2.10.8
+        version: 2.10.9
       electron:
         specifier: 41.0.3
         version: 41.0.3
@@ -180,6 +180,11 @@ packages:
 
   '@babel/parser@7.29.0':
     resolution: {integrity: sha512-IyDgFV5GeDUVX4YdF/3CPULtVGSXXMLh1xVIgdCgxApktqnQV0r7/8Nqthg+8YLGaAtdyIlo2qIdZrbCv4+7ww==}
+    engines: {node: '>=6.0.0'}
+    hasBin: true
+
+  '@babel/parser@7.29.2':
+    resolution: {integrity: sha512-4GgRzy/+fsBa72/RZVJmGKPmZu9Byn8o4MoLpmNe1m8ZfYnz5emHLQz3U4gLud6Zwl0RZIcgiLD7Uq7ySFuDLA==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
@@ -1497,8 +1502,8 @@ packages:
     resolution: {integrity: sha512-1pHv8LX9CpKut1Zp4EXey7Z8OfH11ONNH6Dhi2WDUt31VVZFXZzKwXcysBgqSumFCmR+0dqjMK5v5JiFHzi0+g==}
     engines: {node: 20 || >=22}
 
-  baseline-browser-mapping@2.10.8:
-    resolution: {integrity: sha512-PCLz/LXGBsNTErbtB6i5u4eLpHeMfi93aUv5duMmj6caNu6IphS4q6UevDnL36sZQv9lrP11dbPKGMaXPwMKfQ==}
+  baseline-browser-mapping@2.10.9:
+    resolution: {integrity: sha512-OZd0e2mU11ClX8+IdXe3r0dbqMEznRiT4TfbhYIbcRPZkqJ7Qwer8ij3GZAmLsRKa+II9V1v5czCkvmHH3XZBg==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
@@ -3186,6 +3191,12 @@ packages:
     peerDependencies:
       typescript: '>=4.8.4'
 
+  ts-api-utils@2.5.0:
+    resolution: {integrity: sha512-OJ/ibxhPlqrMM0UiNHJ/0CKQkoKF243/AEmplt3qpRgkW8VG7IfOS41h7V8TjITqdByHzrjcS/2si+y4lIh8NA==}
+    engines: {node: '>=18.12'}
+    peerDependencies:
+      typescript: '>=4.8.4'
+
   ts-declaration-location@1.0.7:
     resolution: {integrity: sha512-EDyGAwH1gO0Ausm9gV6T2nUvBgXT5kGoCMJPllOaooZ+4VvJiKBdZE7wK18N1deEowhcUptS+5GXZK8U/fvpwA==}
     peerDependencies:
@@ -3585,6 +3596,10 @@ snapshots:
       '@babel/types': 7.29.0
 
   '@babel/parser@7.29.0':
+    dependencies:
+      '@babel/types': 7.29.0
+
+  '@babel/parser@7.29.2':
     dependencies:
       '@babel/types': 7.29.0
 
@@ -4469,8 +4484,8 @@ snapshots:
 
   '@typescript-eslint/project-service@8.56.1(typescript@5.9.3)':
     dependencies:
-      '@typescript-eslint/tsconfig-utils': 8.57.0(typescript@5.9.3)
-      '@typescript-eslint/types': 8.57.0
+      '@typescript-eslint/tsconfig-utils': 8.56.1(typescript@5.9.3)
+      '@typescript-eslint/types': 8.56.1
       debug: 4.4.3
       typescript: 5.9.3
     transitivePeerDependencies:
@@ -4543,7 +4558,7 @@ snapshots:
       minimatch: 10.2.4
       semver: 7.7.4
       tinyglobby: 0.2.15
-      ts-api-utils: 2.4.0(typescript@5.9.3)
+      ts-api-utils: 2.5.0(typescript@5.9.3)
       typescript: 5.9.3
     transitivePeerDependencies:
       - supports-color
@@ -4676,7 +4691,7 @@ snapshots:
 
   '@vue/compiler-core@3.4.21':
     dependencies:
-      '@babel/parser': 7.29.0
+      '@babel/parser': 7.29.2
       '@vue/shared': 3.4.21
       entities: 4.5.0
       estree-walker: 2.0.2
@@ -4689,7 +4704,7 @@ snapshots:
 
   '@vue/compiler-sfc@3.4.21':
     dependencies:
-      '@babel/parser': 7.29.0
+      '@babel/parser': 7.29.2
       '@vue/compiler-core': 3.4.21
       '@vue/compiler-dom': 3.4.21
       '@vue/compiler-ssr': 3.4.21
@@ -4753,7 +4768,7 @@ snapshots:
 
   balanced-match@4.0.3: {}
 
-  baseline-browser-mapping@2.10.8: {}
+  baseline-browser-mapping@2.10.9: {}
 
   birecord@0.1.1: {}
 
@@ -4772,7 +4787,7 @@ snapshots:
 
   browserslist@4.27.0:
     dependencies:
-      baseline-browser-mapping: 2.10.8
+      baseline-browser-mapping: 2.10.9
       caniuse-lite: 1.0.30001752
       electron-to-chromium: 1.5.244
       node-releases: 2.0.27
@@ -6721,6 +6736,10 @@ snapshots:
   tree-kill@1.2.2: {}
 
   ts-api-utils@2.4.0(typescript@5.9.3):
+    dependencies:
+      typescript: 5.9.3
+
+  ts-api-utils@2.5.0(typescript@5.9.3):
     dependencies:
       typescript: 5.9.3
 
