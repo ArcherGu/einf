@@ -1,5 +1,5 @@
 import { app, BrowserWindow } from 'electron'
-import { Controller, Inject, IpcHandle, IpcOn, IpcSend, Window } from '../../../dist'
+import { Controller, Inject, IpcHandle, IpcOn, IpcSend, Window } from '../../../dist/index.cjs'
 import { AppService } from './app.service'
 
 @Controller()

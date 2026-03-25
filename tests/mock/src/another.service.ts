@@ -1,4 +1,4 @@
-import { Injectable } from '../../../dist'
+import { Injectable } from '../../../dist/index.cjs'
 
 @Injectable()
 export class AnotherService {

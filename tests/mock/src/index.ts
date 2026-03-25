@@ -1,6 +1,6 @@
 import { join } from 'node:path'
 import { app, BrowserWindow } from 'electron'
-import { createEinf } from '../../../dist'
+import { createEinf } from '../../../dist/index.cjs'
 import { AppController } from './app.controller'
 
 process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = 'true'
