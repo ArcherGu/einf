@@ -41,7 +41,7 @@
     "@types/node": "25.6.0",
     "baseline-browser-mapping": "^2.10.10",
     "electron": "41.2.1",
-    "eslint": "10.2.0",
+    "eslint": "10.2.1",
     "execa": "9.6.1",
     "lint-staged": "16.4.0",
     "simple-git-hooks": "2.13.1",
