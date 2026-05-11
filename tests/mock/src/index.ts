@@ -18,6 +18,9 @@ async function createWindow() {
   const URL = isDev
     ? process.env.DS_RENDERER_URL
     : `file://${join(app.getAppPath(), 'dist/render/index.html')}`
+  if (!URL) {
+    throw new Error('No renderer URL defined')
+  }
 
   win.loadURL(URL)
 
