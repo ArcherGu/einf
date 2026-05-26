@@ -25,8 +25,8 @@ importers:
         specifier: ^2.10.29
         version: 2.10.32
       electron:
-        specifier: 42.2.0
-        version: 42.2.0
+        specifier: 42.3.0
+        version: 42.3.0
       eslint:
         specifier: 10.3.0
         version: 10.3.0(jiti@2.6.1)
@@ -50,7 +50,7 @@ importers:
         version: 8.0.14(@types/node@25.9.1)(esbuild@0.27.0)(jiti@2.6.1)(yaml@2.8.4)
       vite-plugin-doubleshot:
         specifier: 0.0.23
-        version: 0.0.23(electron@42.2.0)(esbuild@0.27.0)(typescript@6.0.3)(vite@8.0.14(@types/node@25.9.1)(esbuild@0.27.0)(jiti@2.6.1)(yaml@2.8.4))
+        version: 0.0.23(electron@42.3.0)(esbuild@0.27.0)(typescript@6.0.3)(vite@8.0.14(@types/node@25.9.1)(esbuild@0.27.0)(jiti@2.6.1)(yaml@2.8.4))
       vitest:
         specifier: 4.1.7
         version: 4.1.7(@types/node@25.9.1)(vite@8.0.14(@types/node@25.9.1)(esbuild@0.27.0)(jiti@2.6.1)(yaml@2.8.4))
@@ -1485,8 +1485,8 @@ packages:
   electron-to-chromium@1.5.331:
     resolution: {integrity: sha512-IbxXrsTlD3hRodkLnbxAPP4OuJYdWCeM3IOdT+CpcMoIwIoDfCmRpEtSPfwBXxVkg9xmBeY7Lz2Eo2TDn/HC3Q==}
 
-  electron@42.2.0:
-    resolution: {integrity: sha512-b2Tc7sIKiZEl0tBVwFM5GJ+FT5KYhmy9QJHjx8BGVZPVW2SctXWEvrE959ElB56qw7H05dBkhlikDA1DmpaAMw==}
+  electron@42.3.0:
+    resolution: {integrity: sha512-9ZiLdRXk+WDxW1OgIUz8J2rIQ5TYU9o629gCOjU48Q3dQiOmym7osWsH5Ubs/Jh4uuFLn6m6SBD2rmRXLAPz9g==}
     engines: {node: '>= 22.12.0'}
     hasBin: true
 
@@ -3271,7 +3271,7 @@ snapshots:
       fast-wrap-ansi: 0.2.2
       sisteransi: 1.0.5
 
-  '@doubleshot/builder@0.0.22(electron@42.2.0)(esbuild@0.27.0)(typescript@6.0.3)':
+  '@doubleshot/builder@0.0.22(electron@42.3.0)(esbuild@0.27.0)(typescript@6.0.3)':
     dependencies:
       bundle-require: 5.1.0(esbuild@0.27.0)
       cac: 7.0.0
@@ -3282,7 +3282,7 @@ snapshots:
       tsdown: 0.22.0(typescript@6.0.3)
       wait-on: 9.0.5
     optionalDependencies:
-      electron: 42.2.0
+      electron: 42.3.0
     transitivePeerDependencies:
       - '@arethetypeswrong/core'
       - '@ts-macro/tsc'
@@ -4456,7 +4456,7 @@ snapshots:
 
   electron-to-chromium@1.5.331: {}
 
-  electron@42.2.0:
+  electron@42.3.0:
     dependencies:
       '@electron/get': 5.0.0
       '@types/node': 24.10.15
@@ -6147,9 +6147,9 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  vite-plugin-doubleshot@0.0.23(electron@42.2.0)(esbuild@0.27.0)(typescript@6.0.3)(vite@8.0.14(@types/node@25.9.1)(esbuild@0.27.0)(jiti@2.6.1)(yaml@2.8.4)):
+  vite-plugin-doubleshot@0.0.23(electron@42.3.0)(esbuild@0.27.0)(typescript@6.0.3)(vite@8.0.14(@types/node@25.9.1)(esbuild@0.27.0)(jiti@2.6.1)(yaml@2.8.4)):
     dependencies:
-      '@doubleshot/builder': 0.0.22(electron@42.2.0)(esbuild@0.27.0)(typescript@6.0.3)
+      '@doubleshot/builder': 0.0.22(electron@42.3.0)(esbuild@0.27.0)(typescript@6.0.3)
       vite: 8.0.14(@types/node@25.9.1)(esbuild@0.27.0)(jiti@2.6.1)(yaml@2.8.4)
     transitivePeerDependencies:
       - '@arethetypeswrong/core'
