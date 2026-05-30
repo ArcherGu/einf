@@ -7,3 +7,7 @@ shellEmulator: true
 trustPolicy: no-downgrade
 trustPolicyExclude:
   - semver@6.3.1
+
+minimumReleaseAgeExclude:
+  - '@eslint/plugin-kit@0.7.2'
+  - eslint@10.4.1
