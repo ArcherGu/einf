@@ -52,8 +52,8 @@ importers:
         specifier: 8.0.16
         version: 8.0.16(@types/node@25.9.3)(esbuild@0.27.0)(jiti@2.6.1)(yaml@2.9.0)
       vite-plugin-doubleshot:
-        specifier: 0.0.23
-        version: 0.0.23(electron@42.4.0)(esbuild@0.27.0)(typescript@6.0.3)(vite@8.0.16(@types/node@25.9.3)(esbuild@0.27.0)(jiti@2.6.1)(yaml@2.9.0))
+        specifier: 0.0.24
+        version: 0.0.24(electron@42.4.0)(esbuild@0.27.0)(typescript@6.0.3)(vite@8.0.16(@types/node@25.9.3)(esbuild@0.27.0)(jiti@2.6.1)(yaml@2.9.0))
       vitest:
         specifier: 4.1.8
         version: 4.1.8(@types/node@25.9.3)(vite@8.0.16(@types/node@25.9.3)(esbuild@0.27.0)(jiti@2.6.1)(yaml@2.9.0))
@@ -240,8 +240,8 @@ packages:
     resolution: {integrity: sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==}
     engines: {node: '>=0.1.90'}
 
-  '@doubleshot/builder@0.0.22':
-    resolution: {integrity: sha512-ZQZ5Q9OAdLurjWUQ+CrBMoD2b2NmpH3h0BfgsEfdAgVfxN/vWPW3PmaA2n7Z2zFjGo7lMgR3dqqVlQOrkxkd1Q==}
+  '@doubleshot/builder@0.0.23':
+    resolution: {integrity: sha512-cNurKWRVPgQqSa4xfXwE9aBhUKKYGRp+19EX47O8EZ3myppDogVKQhtUv+vtt7EhT3+PN32L6zbot8JW8DvYEw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     peerDependencies:
@@ -3818,8 +3818,8 @@ packages:
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
 
-  vite-plugin-doubleshot@0.0.23:
-    resolution: {integrity: sha512-8PayBWC4a7At1U0yrQoZAv3Xz3QpDYSUamhFOPdX2ArYJhSBPlpS0kHCoTKuwNks6Cuj0PH8lPQ0uciVOGF8/A==}
+  vite-plugin-doubleshot@0.0.24:
+    resolution: {integrity: sha512-70ue5APQf0Yf157QinrzDIe/RfdcYlvA2HpmsxFULaZZDCgDm9eOJTCPvx51X4vgAmiRKvjfsz+zfHfYXnErew==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
@@ -3914,8 +3914,8 @@ packages:
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
 
-  wait-on@9.0.5:
-    resolution: {integrity: sha512-qgnbHDfDTRIp73ANEJNRW/7kn8CrDUcvZz18xotJQku/P4saTGkbIzvnMZebPmVvVNUiRq1qWAPyqCH+W4H8KA==}
+  wait-on@9.0.10:
+    resolution: {integrity: sha512-rCoJEhvMr0X6alHmwc9abbrA5ZrLZFKpFQVKPNFwl2h7DapXOGdmimIHDtLOWhT4PjhZhxFEtZoQgEXbkDWdZw==}
     engines: {node: '>=20.0.0'}
     hasBin: true
 
@@ -4233,7 +4233,7 @@ snapshots:
   '@colors/colors@1.5.0':
     optional: true
 
-  '@doubleshot/builder@0.0.22(electron@42.4.0)(esbuild@0.27.0)(typescript@6.0.3)':
+  '@doubleshot/builder@0.0.23(electron@42.4.0)(esbuild@0.27.0)(typescript@6.0.3)':
     dependencies:
       bundle-require: 5.1.0(esbuild@0.27.0)
       cac: 7.0.0
@@ -4242,7 +4242,7 @@ snapshots:
       joycon: 3.1.1
       resolve-from: 5.0.0
       tsdown: 0.22.2(typescript@6.0.3)
-      wait-on: 9.0.5
+      wait-on: 9.0.10
     optionalDependencies:
       electron: 42.4.0
     transitivePeerDependencies:
@@ -7977,9 +7977,9 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vite-plugin-doubleshot@0.0.23(electron@42.4.0)(esbuild@0.27.0)(typescript@6.0.3)(vite@8.0.16(@types/node@25.9.3)(esbuild@0.27.0)(jiti@2.6.1)(yaml@2.9.0)):
+  vite-plugin-doubleshot@0.0.24(electron@42.4.0)(esbuild@0.27.0)(typescript@6.0.3)(vite@8.0.16(@types/node@25.9.3)(esbuild@0.27.0)(jiti@2.6.1)(yaml@2.9.0)):
     dependencies:
-      '@doubleshot/builder': 0.0.22(electron@42.4.0)(esbuild@0.27.0)(typescript@6.0.3)
+      '@doubleshot/builder': 0.0.23(electron@42.4.0)(esbuild@0.27.0)(typescript@6.0.3)
       vite: 8.0.16(@types/node@25.9.3)(esbuild@0.27.0)(jiti@2.6.1)(yaml@2.9.0)
     transitivePeerDependencies:
       - '@arethetypeswrong/core'
@@ -8053,7 +8053,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  wait-on@9.0.5:
+  wait-on@9.0.10:
     dependencies:
       axios: 1.16.0
       joi: 18.2.1
