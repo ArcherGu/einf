@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "@lightwing/eslint-config": "1.0.156",
-    "@types/node": "25.9.4",
+    "@types/node": "25.9.5",
     "baseline-browser-mapping": "^2.10.33",
     "electron": "43.1.0",
     "eslint": "10.4.1",
