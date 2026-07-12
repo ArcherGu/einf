@@ -44,7 +44,7 @@
     "eslint": "10.4.1",
     "execa": "9.6.1",
     "lint-staged": "17.0.8",
-    "semantic-release": "25.0.5",
+    "semantic-release": "25.0.6",
     "simple-git-hooks": "2.13.1",
     "tsdown": "^0.22.1",
     "typescript": "6.0.3",
