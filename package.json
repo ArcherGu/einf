@@ -47,7 +47,7 @@
     "semantic-release": "25.0.6",
     "simple-git-hooks": "2.13.1",
     "tsdown": "^0.22.1",
-    "typescript": "6.0.3",
+    "typescript": "7.0.2",
     "vite": "8.1.4",
     "vite-plugin-doubleshot": "0.0.24",
     "vitest": "4.1.10"
