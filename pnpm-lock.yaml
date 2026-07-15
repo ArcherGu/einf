@@ -40,8 +40,8 @@ importers:
         specifier: 17.0.8
         version: 17.0.8
       semantic-release:
-        specifier: 25.0.6
-        version: 25.0.6(@typescript/typescript6@6.0.2)
+        specifier: 25.0.7
+        version: 25.0.7(@typescript/typescript6@6.0.2)
       simple-git-hooks:
         specifier: 2.13.1
         version: 2.13.1
@@ -3512,8 +3512,8 @@ packages:
     resolution: {integrity: sha512-3A6sD0WYP7+QrjbfNA2FN3FsOaGGFoekCVgTyypy53gPxhbkCIjtO6YWgdrfM+n/8sI8JeXZOIxsHjMTNxQ4nQ==}
     engines: {node: ^14.0.0 || >=16.0.0}
 
-  semantic-release@25.0.6:
-    resolution: {integrity: sha512-EGS5PWCDavYD4jAE4vKQ+VKcwXFpxLsKg05UcrUQwqxUCM1KtNRx9ZdMyYJL3z2aTyAH9zDgQSNFjRvbsIuKHQ==}
+  semantic-release@25.0.7:
+    resolution: {integrity: sha512-fFiUD7LNFI0TOGkc49WDHUX4GYKrOMDKct5ReSB1EJCZiPsPdbIPIJGys1xb2ILpK1v9JMsRkjJQgTRpbr7DgQ==}
     engines: {node: ^22.14.0 || >= 24.10.0}
     hasBin: true
 
@@ -4956,7 +4956,7 @@ snapshots:
 
   '@sec-ant/readable-stream@0.4.1': {}
 
-  '@semantic-release/commit-analyzer@13.0.1(semantic-release@25.0.6(@typescript/typescript6@6.0.2))':
+  '@semantic-release/commit-analyzer@13.0.1(semantic-release@25.0.7(@typescript/typescript6@6.0.2))':
     dependencies:
       conventional-changelog-angular: 8.3.1
       conventional-changelog-writer: 8.4.0
@@ -4966,13 +4966,13 @@ snapshots:
       import-from-esm: 2.0.0
       lodash-es: 4.18.1
       micromatch: 4.0.8
-      semantic-release: 25.0.6(@typescript/typescript6@6.0.2)
+      semantic-release: 25.0.7(@typescript/typescript6@6.0.2)
     transitivePeerDependencies:
       - supports-color
 
   '@semantic-release/error@4.0.0': {}
 
-  '@semantic-release/github@12.0.8(semantic-release@25.0.6(@typescript/typescript6@6.0.2))':
+  '@semantic-release/github@12.0.8(semantic-release@25.0.7(@typescript/typescript6@6.0.2))':
     dependencies:
       '@octokit/core': 7.0.6
       '@octokit/plugin-paginate-rest': 14.0.0(@octokit/core@7.0.6)
@@ -4988,7 +4988,7 @@ snapshots:
       lodash-es: 4.18.1
       mime: 4.1.0
       p-filter: 4.1.0
-      semantic-release: 25.0.6(@typescript/typescript6@6.0.2)
+      semantic-release: 25.0.7(@typescript/typescript6@6.0.2)
       tinyglobby: 0.2.17
       undici: 7.25.0
       url-join: 5.0.0
@@ -4996,7 +4996,7 @@ snapshots:
       - kerberos
       - supports-color
 
-  '@semantic-release/npm@13.1.5(semantic-release@25.0.6(@typescript/typescript6@6.0.2))':
+  '@semantic-release/npm@13.1.5(semantic-release@25.0.7(@typescript/typescript6@6.0.2))':
     dependencies:
       '@actions/core': 3.0.1
       '@semantic-release/error': 4.0.0
@@ -5011,11 +5011,11 @@ snapshots:
       rc: 1.2.8
       read-pkg: 10.1.0
       registry-auth-token: 5.1.1
-      semantic-release: 25.0.6(@typescript/typescript6@6.0.2)
+      semantic-release: 25.0.7(@typescript/typescript6@6.0.2)
       semver: 7.8.5
       tempy: 3.2.0
 
-  '@semantic-release/release-notes-generator@14.1.1(semantic-release@25.0.6(@typescript/typescript6@6.0.2))':
+  '@semantic-release/release-notes-generator@14.1.1(semantic-release@25.0.7(@typescript/typescript6@6.0.2))':
     dependencies:
       conventional-changelog-angular: 8.3.1
       conventional-changelog-writer: 8.4.0
@@ -5025,7 +5025,7 @@ snapshots:
       import-from-esm: 2.0.0
       lodash-es: 4.18.1
       read-package-up: 11.0.0
-      semantic-release: 25.0.6(@typescript/typescript6@6.0.2)
+      semantic-release: 25.0.7(@typescript/typescript6@6.0.2)
     transitivePeerDependencies:
       - supports-color
 
@@ -7713,13 +7713,13 @@ snapshots:
       refa: 0.12.1
       regexp-ast-analysis: 0.7.1
 
-  semantic-release@25.0.6(@typescript/typescript6@6.0.2):
+  semantic-release@25.0.7(@typescript/typescript6@6.0.2):
     dependencies:
-      '@semantic-release/commit-analyzer': 13.0.1(semantic-release@25.0.6(@typescript/typescript6@6.0.2))
+      '@semantic-release/commit-analyzer': 13.0.1(semantic-release@25.0.7(@typescript/typescript6@6.0.2))
       '@semantic-release/error': 4.0.0
-      '@semantic-release/github': 12.0.8(semantic-release@25.0.6(@typescript/typescript6@6.0.2))
-      '@semantic-release/npm': 13.1.5(semantic-release@25.0.6(@typescript/typescript6@6.0.2))
-      '@semantic-release/release-notes-generator': 14.1.1(semantic-release@25.0.6(@typescript/typescript6@6.0.2))
+      '@semantic-release/github': 12.0.8(semantic-release@25.0.7(@typescript/typescript6@6.0.2))
+      '@semantic-release/npm': 13.1.5(semantic-release@25.0.7(@typescript/typescript6@6.0.2))
+      '@semantic-release/release-notes-generator': 14.1.1(semantic-release@25.0.7(@typescript/typescript6@6.0.2))
       aggregate-error: 5.0.0
       cosmiconfig: 9.0.2(@typescript/typescript6@6.0.2)
       debug: 4.4.3
