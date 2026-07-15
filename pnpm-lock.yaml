@@ -55,8 +55,8 @@ importers:
         specifier: 8.1.4
         version: 8.1.4(@types/node@25.9.5)(esbuild@0.27.0)(jiti@2.6.1)(yaml@2.9.0)
       vite-plugin-doubleshot:
-        specifier: 0.0.24
-        version: 0.0.24(@typescript/typescript6@6.0.2)(electron@43.1.0)(esbuild@0.27.0)(vite@8.1.4(@types/node@25.9.5)(esbuild@0.27.0)(jiti@2.6.1)(yaml@2.9.0))
+        specifier: 0.0.25
+        version: 0.0.25(@typescript/typescript6@6.0.2)(electron@43.1.0)(esbuild@0.27.0)(vite@8.1.4(@types/node@25.9.5)(esbuild@0.27.0)(jiti@2.6.1)(yaml@2.9.0))
       vitest:
         specifier: 4.1.10
         version: 4.1.10(@types/node@25.9.5)(vite@8.1.4(@types/node@25.9.5)(esbuild@0.27.0)(jiti@2.6.1)(yaml@2.9.0))
@@ -222,8 +222,8 @@ packages:
     resolution: {integrity: sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==}
     engines: {node: '>=0.1.90'}
 
-  '@doubleshot/builder@0.0.23':
-    resolution: {integrity: sha512-cNurKWRVPgQqSa4xfXwE9aBhUKKYGRp+19EX47O8EZ3myppDogVKQhtUv+vtt7EhT3+PN32L6zbot8JW8DvYEw==}
+  '@doubleshot/builder@0.0.24':
+    resolution: {integrity: sha512-AVZJICF2sPMLT4hq0QC0v1bC0Z0bRJT/ZvDNMJqWqEAz/M+n28MsVFuyhtUyR3IjaQeOPWtoxuO8FORORjaUUw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     peerDependencies:
@@ -3770,6 +3770,40 @@ packages:
   ts-pattern@5.9.0:
     resolution: {integrity: sha512-6s5V71mX8qBUmlgbrfL33xDUwO0fq48rxAu2LBE11WBeGdpCPOsXksQbZJHvHwhrd3QjUusd3mAOM5Gg0mFBLg==}
 
+  tsdown@0.22.5:
+    resolution: {integrity: sha512-0iEpnuOVBGo7mPW+FlyglErHBExYOAlpLBlCl/QcTrRUJ+TF2prfzl6ipQS5VsjJejFXnmbkdh0Ta53B3stWxg==}
+    engines: {node: ^22.18.0 || >=24.11.0}
+    hasBin: true
+    peerDependencies:
+      '@arethetypeswrong/core': ^0.18.1
+      '@tsdown/css': 0.22.5
+      '@tsdown/exe': 0.22.5
+      '@vitejs/devtools': '*'
+      publint: ^0.3.8
+      tsx: '*'
+      typescript: ^5.0.0 || ^6.0.0 || ^7.0.0
+      unplugin-unused: ^0.5.0
+      unrun: '*'
+    peerDependenciesMeta:
+      '@arethetypeswrong/core':
+        optional: true
+      '@tsdown/css':
+        optional: true
+      '@tsdown/exe':
+        optional: true
+      '@vitejs/devtools':
+        optional: true
+      publint:
+        optional: true
+      tsx:
+        optional: true
+      typescript:
+        optional: true
+      unplugin-unused:
+        optional: true
+      unrun:
+        optional: true
+
   tsdown@0.22.7:
     resolution: {integrity: sha512-4egbOzc9dxVv/QS+gDV75FIxDIjQQeOnXBlUuikyjmn0ozuc6FW11djJjEEo3vqkuJRygpnKHurnj+Iwftk4VA==}
     engines: {node: ^22.18.0 || >=24.11.0}
@@ -3930,8 +3964,8 @@ packages:
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
 
-  vite-plugin-doubleshot@0.0.24:
-    resolution: {integrity: sha512-70ue5APQf0Yf157QinrzDIe/RfdcYlvA2HpmsxFULaZZDCgDm9eOJTCPvx51X4vgAmiRKvjfsz+zfHfYXnErew==}
+  vite-plugin-doubleshot@0.0.25:
+    resolution: {integrity: sha512-fZSRl+W2saYNx2m/OIc4s/Cxn1k39RfmAXnMvFexTRFFuIKhcotNcBqwOsvridDAJ1wQ6NsDat20ho7fGO0zNA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
@@ -4324,7 +4358,7 @@ snapshots:
   '@colors/colors@1.5.0':
     optional: true
 
-  '@doubleshot/builder@0.0.23(@typescript/typescript6@6.0.2)(electron@43.1.0)(esbuild@0.27.0)':
+  '@doubleshot/builder@0.0.24(@typescript/typescript6@6.0.2)(electron@43.1.0)(esbuild@0.27.0)':
     dependencies:
       bundle-require: 5.1.0(esbuild@0.27.0)
       cac: 7.0.0
@@ -4332,7 +4366,7 @@ snapshots:
       colorette: 2.0.20
       joycon: 3.1.1
       resolve-from: 5.0.0
-      tsdown: 0.22.7(@typescript/typescript6@6.0.2)
+      tsdown: 0.22.5(@typescript/typescript6@6.0.2)
       wait-on: 9.0.10
     optionalDependencies:
       electron: 43.1.0
@@ -7970,6 +8004,31 @@ snapshots:
 
   ts-pattern@5.9.0: {}
 
+  tsdown@0.22.5(@typescript/typescript6@6.0.2):
+    dependencies:
+      ansis: 4.3.1
+      cac: 7.0.0
+      defu: 6.1.7
+      empathic: 2.0.1
+      hookable: 6.1.1
+      import-without-cache: 0.4.0
+      obug: 2.1.3
+      picomatch: 4.0.5
+      rolldown: 1.1.5
+      rolldown-plugin-dts: 0.27.9(@typescript/typescript6@6.0.2)(rolldown@1.1.5)
+      semver: 7.8.5
+      tinyexec: 1.2.4
+      tinyglobby: 0.2.17
+      tree-kill: 1.2.2
+      unconfig-core: 7.5.0
+    optionalDependencies:
+      typescript: '@typescript/typescript6@6.0.2'
+    transitivePeerDependencies:
+      - '@ts-macro/tsc'
+      - '@typescript/native-preview'
+      - oxc-resolver
+      - vue-tsc
+
   tsdown@0.22.7(@typescript/typescript6@6.0.2):
     dependencies:
       ansis: 4.3.1
@@ -8123,9 +8182,9 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vite-plugin-doubleshot@0.0.24(@typescript/typescript6@6.0.2)(electron@43.1.0)(esbuild@0.27.0)(vite@8.1.4(@types/node@25.9.5)(esbuild@0.27.0)(jiti@2.6.1)(yaml@2.9.0)):
+  vite-plugin-doubleshot@0.0.25(@typescript/typescript6@6.0.2)(electron@43.1.0)(esbuild@0.27.0)(vite@8.1.4(@types/node@25.9.5)(esbuild@0.27.0)(jiti@2.6.1)(yaml@2.9.0)):
     dependencies:
-      '@doubleshot/builder': 0.0.23(@typescript/typescript6@6.0.2)(electron@43.1.0)(esbuild@0.27.0)
+      '@doubleshot/builder': 0.0.24(@typescript/typescript6@6.0.2)(electron@43.1.0)(esbuild@0.27.0)
       vite: 8.1.4(@types/node@25.9.5)(esbuild@0.27.0)(jiti@2.6.1)(yaml@2.9.0)
     transitivePeerDependencies:
       - '@arethetypeswrong/core'
