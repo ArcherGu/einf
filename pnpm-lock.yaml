@@ -40,8 +40,8 @@ importers:
         specifier: 17.0.8
         version: 17.0.8
       semantic-release:
-        specifier: 25.0.7
-        version: 25.0.7(@typescript/typescript6@6.0.2)
+        specifier: 25.0.8
+        version: 25.0.8(@typescript/typescript6@6.0.2)
       simple-git-hooks:
         specifier: 2.13.1
         version: 2.13.1
@@ -3480,10 +3480,6 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
-  pretty-ms@9.2.0:
-    resolution: {integrity: sha512-4yf0QO/sllf/1zbZWYnvWw3NxCQwLXKzIj0G849LSufP15BXKM0rbD2Z3wVnkMfjdn/CB0Dpp444gYAACdsplg==}
-    engines: {node: '>=18'}
-
   pretty-ms@9.3.0:
     resolution: {integrity: sha512-gjVS5hOP+M3wMm5nmNOucbIrqudzs9v/57bWRHQWLYklXqoXKrVfYW2W9+glfGsqtPgpiz5WwyEEB+ksXIx3gQ==}
     engines: {node: '>=18'}
@@ -3633,8 +3629,8 @@ packages:
     resolution: {integrity: sha512-3A6sD0WYP7+QrjbfNA2FN3FsOaGGFoekCVgTyypy53gPxhbkCIjtO6YWgdrfM+n/8sI8JeXZOIxsHjMTNxQ4nQ==}
     engines: {node: ^14.0.0 || >=16.0.0}
 
-  semantic-release@25.0.7:
-    resolution: {integrity: sha512-fFiUD7LNFI0TOGkc49WDHUX4GYKrOMDKct5ReSB1EJCZiPsPdbIPIJGys1xb2ILpK1v9JMsRkjJQgTRpbr7DgQ==}
+  semantic-release@25.0.8:
+    resolution: {integrity: sha512-w/iZ0bur36rKffXZYmIUmy068eoBY3Ij1DCCddx2JwWEM5Tg+eU9ld/E9qSInVvPASyyR2Ln/XGfQ9OZrMlhtw==}
     engines: {node: ^22.14.0 || >= 24.10.0}
     hasBin: true
 
@@ -4257,10 +4253,6 @@ packages:
   yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
-
-  yoctocolors@2.1.1:
-    resolution: {integrity: sha512-GQHQqAopRhwU8Kt1DDM8NjibDXHC8eoh1erhGAJPEyveY9qqVeXvVikNKrDz69sHowPMorbPUrH/mx8c50eiBQ==}
-    engines: {node: '>=18'}
 
   yoctocolors@2.1.2:
     resolution: {integrity: sha512-CzhO+pFNo8ajLM2d2IW/R93ipy99LWjtwblvC1RsoSUMZgyLbYFr221TnSNT7GjGdYui6P459mw9JH/g/zW2ug==}
@@ -5184,7 +5176,7 @@ snapshots:
 
   '@sec-ant/readable-stream@0.4.1': {}
 
-  '@semantic-release/commit-analyzer@13.0.1(semantic-release@25.0.7(@typescript/typescript6@6.0.2))':
+  '@semantic-release/commit-analyzer@13.0.1(semantic-release@25.0.8(@typescript/typescript6@6.0.2))':
     dependencies:
       conventional-changelog-angular: 8.3.1
       conventional-changelog-writer: 8.4.0
@@ -5194,13 +5186,13 @@ snapshots:
       import-from-esm: 2.0.0
       lodash-es: 4.18.1
       micromatch: 4.0.8
-      semantic-release: 25.0.7(@typescript/typescript6@6.0.2)
+      semantic-release: 25.0.8(@typescript/typescript6@6.0.2)
     transitivePeerDependencies:
       - supports-color
 
   '@semantic-release/error@4.0.0': {}
 
-  '@semantic-release/github@12.0.8(semantic-release@25.0.7(@typescript/typescript6@6.0.2))':
+  '@semantic-release/github@12.0.8(semantic-release@25.0.8(@typescript/typescript6@6.0.2))':
     dependencies:
       '@octokit/core': 7.0.6
       '@octokit/plugin-paginate-rest': 14.0.0(@octokit/core@7.0.6)
@@ -5216,7 +5208,7 @@ snapshots:
       lodash-es: 4.18.1
       mime: 4.1.0
       p-filter: 4.1.0
-      semantic-release: 25.0.7(@typescript/typescript6@6.0.2)
+      semantic-release: 25.0.8(@typescript/typescript6@6.0.2)
       tinyglobby: 0.2.17
       undici: 7.25.0
       url-join: 5.0.0
@@ -5224,7 +5216,7 @@ snapshots:
       - kerberos
       - supports-color
 
-  '@semantic-release/npm@13.1.5(semantic-release@25.0.7(@typescript/typescript6@6.0.2))':
+  '@semantic-release/npm@13.1.5(semantic-release@25.0.8(@typescript/typescript6@6.0.2))':
     dependencies:
       '@actions/core': 3.0.1
       '@semantic-release/error': 4.0.0
@@ -5239,11 +5231,11 @@ snapshots:
       rc: 1.2.8
       read-pkg: 10.1.0
       registry-auth-token: 5.1.1
-      semantic-release: 25.0.7(@typescript/typescript6@6.0.2)
+      semantic-release: 25.0.8(@typescript/typescript6@6.0.2)
       semver: 7.8.5
       tempy: 3.2.0
 
-  '@semantic-release/release-notes-generator@14.1.1(semantic-release@25.0.7(@typescript/typescript6@6.0.2))':
+  '@semantic-release/release-notes-generator@14.1.1(semantic-release@25.0.8(@typescript/typescript6@6.0.2))':
     dependencies:
       conventional-changelog-angular: 8.3.1
       conventional-changelog-writer: 8.4.0
@@ -5253,7 +5245,7 @@ snapshots:
       import-from-esm: 2.0.0
       lodash-es: 4.18.1
       read-package-up: 11.0.0
-      semantic-release: 25.0.7(@typescript/typescript6@6.0.2)
+      semantic-release: 25.0.8(@typescript/typescript6@6.0.2)
     transitivePeerDependencies:
       - supports-color
 
@@ -6648,10 +6640,10 @@ snapshots:
       is-plain-obj: 4.1.0
       is-stream: 4.0.1
       npm-run-path: 6.0.0
-      pretty-ms: 9.2.0
+      pretty-ms: 9.3.0
       signal-exit: 4.1.0
       strip-final-newline: 4.0.0
-      yoctocolors: 2.1.1
+      yoctocolors: 2.1.2
 
   expect-type@1.3.0: {}
 
@@ -7805,10 +7797,6 @@ snapshots:
 
   prettier@3.8.1: {}
 
-  pretty-ms@9.2.0:
-    dependencies:
-      parse-ms: 4.0.0
-
   pretty-ms@9.3.0:
     dependencies:
       parse-ms: 4.0.0
@@ -7998,13 +7986,13 @@ snapshots:
       refa: 0.12.1
       regexp-ast-analysis: 0.7.1
 
-  semantic-release@25.0.7(@typescript/typescript6@6.0.2):
+  semantic-release@25.0.8(@typescript/typescript6@6.0.2):
     dependencies:
-      '@semantic-release/commit-analyzer': 13.0.1(semantic-release@25.0.7(@typescript/typescript6@6.0.2))
+      '@semantic-release/commit-analyzer': 13.0.1(semantic-release@25.0.8(@typescript/typescript6@6.0.2))
       '@semantic-release/error': 4.0.0
-      '@semantic-release/github': 12.0.8(semantic-release@25.0.7(@typescript/typescript6@6.0.2))
-      '@semantic-release/npm': 13.1.5(semantic-release@25.0.7(@typescript/typescript6@6.0.2))
-      '@semantic-release/release-notes-generator': 14.1.1(semantic-release@25.0.7(@typescript/typescript6@6.0.2))
+      '@semantic-release/github': 12.0.8(semantic-release@25.0.8(@typescript/typescript6@6.0.2))
+      '@semantic-release/npm': 13.1.5(semantic-release@25.0.8(@typescript/typescript6@6.0.2))
+      '@semantic-release/release-notes-generator': 14.1.1(semantic-release@25.0.8(@typescript/typescript6@6.0.2))
       aggregate-error: 5.0.0
       cosmiconfig: 9.0.2(@typescript/typescript6@6.0.2)
       debug: 4.4.3
@@ -8589,8 +8577,6 @@ snapshots:
       yargs-parser: 22.0.0
 
   yocto-queue@0.1.0: {}
-
-  yoctocolors@2.1.1: {}
 
   yoctocolors@2.1.2: {}
 
