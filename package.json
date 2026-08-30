@@ -46,7 +46,7 @@
     "execa": "10.0.1",
     "lint-staged": "17.4.1",
     "semantic-release": "25.0.9",
-    "simple-git-hooks": "2.13.1",
+    "simple-git-hooks": "2.14.0",
     "tsdown": "^0.22.14",
     "typescript": "npm:@typescript/typescript6@6.0.2",
     "vite": "8.2.2",
