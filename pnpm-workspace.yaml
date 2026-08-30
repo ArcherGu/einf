@@ -6,6 +6,11 @@ allowBuilds:
 minimumReleaseAgeExclude:
   - baseline-browser-mapping@2.10.33
 
+overrides:
+  brace-expansion@>=3.0.0 <5.0.7: ^5.0.7
+  brace-expansion@>=4.0.0 <5.0.8: ^5.0.8
+  brace-expansion@>=4.0.0 <5.0.9: ^5.0.9
+
 shellEmulator: true
 trustPolicy: no-downgrade
 trustPolicyExclude:
