@@ -37,7 +37,7 @@
     "reflect-metadata": "^0.2.2"
   },
   "devDependencies": {
-    "@lightwing/eslint-config": "1.0.159",
+    "@lightwing/eslint-config": "1.0.160",
     "@types/node": "25.9.5",
     "@typescript/native": "npm:typescript@7.0.2",
     "baseline-browser-mapping": "^2.10.33",
