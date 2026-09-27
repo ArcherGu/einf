@@ -163,7 +163,7 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  '@humanfs/node@<0.16.8': ^0.16.8
+  '@humanfs/node@<0.16.8': ^0.17.0
   vitest>why-is-node-running: 3.2.1
   brace-expansion@>=3.0.0 <5.0.7: ^5.0.7
   brace-expansion@>=4.0.0 <5.0.8: ^5.0.8
@@ -777,17 +777,17 @@ packages:
   '@hapi/topo@6.0.2':
     resolution: {integrity: sha512-KR3rD5inZbGMrHmgPxsJ9dbi6zEK+C3ZwUwTa+eMwWLz7oijWUTWD2pMSNNYJAU6Qq+65NkxXjqHr/7LM2Xkqg==}
 
-  '@humanfs/core@0.19.2':
-    resolution: {integrity: sha512-UhXNm+CFMWcbChXywFwkmhqjs3PRCmcSa/hfBgLIb7oQ5HNb1wS0icWsGtSAUNgefHeI+eBrA8I1fxmbHsGdvA==}
-    engines: {node: '>=18.18.0'}
+  '@humanfs/core@0.20.0':
+    resolution: {integrity: sha512-Orgc4b+pAZ2xUypBhpKoV8n8BFEXYDVPACi8FAthjWuL4J5mg00I5CmhbQu93Zrmchbu6Icy7nST3rZjqh5eUA==}
+    engines: {node: '>=24.0.0'}
 
-  '@humanfs/node@0.16.8':
-    resolution: {integrity: sha512-gE1eQNZ3R++kTzFUpdGlpmy8kDZD/MLyHqDwqjkVQI0JMdI1D51sy1H958PNXYkM2rAac7e5/CnIKZrHtPh3BQ==}
-    engines: {node: '>=18.18.0'}
+  '@humanfs/node@0.17.0':
+    resolution: {integrity: sha512-XFwVlKpp0UO2cAr+Jz+kIpZX0YSNU08XJucvFJeQxMA+IE8ySUAN5CE3j9bIUTaJs/ICka2bjn8fHzXKe3VF4Q==}
+    engines: {node: '>=24.0.0'}
 
-  '@humanfs/types@0.15.0':
-    resolution: {integrity: sha512-ZZ1w0aoQkwuUuC7Yf+7sdeaNfqQiiLcSRbfI08oAxqLtpXQr9AIVX7Ay7HLDuiLYAaFPu8oBYNq/QIi9URHJ3Q==}
-    engines: {node: '>=18.18.0'}
+  '@humanfs/types@0.16.0':
+    resolution: {integrity: sha512-tqHbCVTrg67GX3oOFPwSv+lpjyEX7B6kCr1he9EB8w9fy5LSs5SFBpqPUSYoZGtbg6O/+NVVJVlVKwEIP4YbWw==}
+    engines: {node: '>=24.0.0'}
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -5170,17 +5170,17 @@ snapshots:
     dependencies:
       '@hapi/hoek': 11.0.7
 
-  '@humanfs/core@0.19.2':
+  '@humanfs/core@0.20.0':
     dependencies:
-      '@humanfs/types': 0.15.0
+      '@humanfs/types': 0.16.0
 
-  '@humanfs/node@0.16.8':
+  '@humanfs/node@0.17.0':
     dependencies:
-      '@humanfs/core': 0.19.2
-      '@humanfs/types': 0.15.0
+      '@humanfs/core': 0.20.0
+      '@humanfs/types': 0.16.0
       '@humanwhocodes/retry': 0.4.2
 
-  '@humanfs/types@0.15.0': {}
+  '@humanfs/types@0.16.0': {}
 
   '@humanwhocodes/module-importer@1.0.1': {}
 
@@ -6825,7 +6825,7 @@ snapshots:
       '@eslint/config-helpers': 0.7.0
       '@eslint/core': 1.2.1
       '@eslint/plugin-kit': 0.7.3
-      '@humanfs/node': 0.16.8
+      '@humanfs/node': 0.17.0
       '@humanwhocodes/module-importer': 1.0.1
       '@humanwhocodes/retry': 0.4.2
       '@types/estree': 1.0.9
