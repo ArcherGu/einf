@@ -1,17 +1,20 @@
+minimumReleaseAgeExcludePrune: true
+
 allowBuilds:
   electron: true
   esbuild: true
   simple-git-hooks: true
 
-minimumReleaseAgeExclude:
-  - baseline-browser-mapping@2.10.33
-
 overrides:
+  '@humanfs/node@<0.16.8': ^0.16.8
+  # 3.2.2 has no provenance; retain the attested release without weakening trustPolicy.
+  vitest>why-is-node-running: 3.2.1
   brace-expansion@>=3.0.0 <5.0.7: ^5.0.7
   brace-expansion@>=4.0.0 <5.0.8: ^5.0.8
   brace-expansion@>=4.0.0 <5.0.9: ^5.0.9
 
 shellEmulator: true
+
 trustPolicy: no-downgrade
 trustPolicyExclude:
   - semver@6.3.1
