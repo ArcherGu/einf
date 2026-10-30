@@ -212,7 +212,7 @@ importers:
         version: 2.14.0
       tsdown:
         specifier: ^0.23.0
-        version: 0.23.3(@typescript/typescript6@6.0.2)
+        version: 0.23.4(@typescript/typescript6@6.0.2)
       typescript:
         specifier: npm:@typescript/typescript6@6.0.2
         version: '@typescript/typescript6@6.0.2'
@@ -4025,6 +4025,9 @@ packages:
     resolution: {integrity: sha512-Pugqs6M0m7Lv1I7FtxN4aoyToKg1C4tu+/381vH35y8oENM/Ai7f7C4StcoK4/+BSw9ebcS8jRiVrORFKCALLw==}
     engines: {node: ^20.0.0 || >=22.0.0}
 
+  tinyps@0.5.1:
+    resolution: {integrity: sha512-B6Ykif5HflC3AdDkS4Zst/2muYVfeXoVMy+KorqH80s/1x4vunIORpNySH681X7fjj+dFM9MDKD6/Hsccjb87Q==}
+
   to-regex-range@5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
     engines: {node: '>=8.0'}
@@ -4088,14 +4091,14 @@ packages:
       unrun:
         optional: true
 
-  tsdown@0.23.3:
-    resolution: {integrity: sha512-yAju1F5b7GDEPCLl4ewM3g54lq0NyyYpFnK2lh/ax7/uznmsn4wBOS9/49pI3cGvxtj2LoOjBUtzaT17UEQkhQ==}
+  tsdown@0.23.4:
+    resolution: {integrity: sha512-AQQ/2Y7KBnf15GL4Ynjdltc94PkbKRI+arStyrp7inSQkRmTWNiXgfv50ESsjhBEsoVtiSloCAO2VyrqojWIOQ==}
     engines: {node: ^22.18.0 || ^24.11.0 || >=26.0.0}
     hasBin: true
     peerDependencies:
       '@arethetypeswrong/core': ^0.18.1
-      '@tsdown/css': 0.23.3
-      '@tsdown/exe': 0.23.3
+      '@tsdown/css': 0.23.4
+      '@tsdown/exe': 0.23.4
       '@vitejs/devtools': '*'
       publint: ^0.3.8
       tsx: '*'
@@ -8305,6 +8308,8 @@ snapshots:
 
   tinypool@2.1.0: {}
 
+  tinyps@0.5.1: {}
+
   to-regex-range@5.0.1:
     dependencies:
       is-number: 7.0.0
@@ -8353,7 +8358,7 @@ snapshots:
       - oxc-resolver
       - vue-tsc
 
-  tsdown@0.23.3(@typescript/typescript6@6.0.2):
+  tsdown@0.23.4(@typescript/typescript6@6.0.2):
     dependencies:
       cac: 7.1.0
       defu: 6.1.7
@@ -8366,7 +8371,7 @@ snapshots:
       rolldown-plugin-dts: 0.28.8(@typescript/typescript6@6.0.2)(rolldown@1.2.15)
       tinyexec: 1.3.1
       tinyglobby: 0.2.17
-      tree-kill: 1.2.2
+      tinyps: 0.5.1
       unconfig-core: 7.5.0
       verkit: 0.5.0
     optionalDependencies:
