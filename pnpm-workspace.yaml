@@ -6,6 +6,10 @@ allowBuilds:
   simple-git-hooks: true
 
 overrides:
+  tinypool@<2.1.2: ^2.2.0
+  katex@<0.18.2: ^0.18.2
+  minimatch@>=9.0.0 <11.0.1: ^11.0.1
+  glob@>=9.0.0 <14.0.2: ^14.0.2
   '@humanfs/node@<0.16.8': ^0.17.0
   # 3.2.2 has no provenance; retain the attested release without weakening trustPolicy.
   vitest>why-is-node-running: 3.2.3
