@@ -44,7 +44,7 @@
     "electron": "45.2.2",
     "eslint": "10.14.0",
     "execa": "10.2.1",
-    "lint-staged": "17.6.0",
+    "lint-staged": "17.6.2",
     "semantic-release": "25.0.9",
     "simple-git-hooks": "2.14.0",
     "tsdown": "^0.23.0",
